@@ -41,31 +41,23 @@ public class BeeEnemy : Enemy
         }
     }
 
-    /// <summary>
-    /// Defines the logic for when the bird enemy is hit by another object.
-    /// </summary>
-    /// <param name="other">The collider of the object that hits the bird.</param>
-    public override void OnHit(Collider2D other)
-    {
-        if (other.CompareTag("Player"))
-        {
-            Debug.Log("BirdEnemy hit the player!");
-            Die(); // Call Die if necessary
-        }
-    }
 
     /// <summary>
     /// Implements the death behavior for the bird enemy.
     /// </summary>
-    public override void Die()
+    public override void Die(Collider2D other)
     {
-        Debug.Log("BirdEnemy died!");
-        Destroy(gameObject); // Remove the bird enemy from the scene
+        if (other.CompareTag("Player"))
+        {
+            //sound
+            Destroy(gameObject); // Remove the Bee enemy from the scene
+        }
+        
     }
 
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        Die();
+        Die(other);
     }
 }
