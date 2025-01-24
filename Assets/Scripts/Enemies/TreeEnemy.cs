@@ -5,31 +5,13 @@ public class TreeEnemy : Enemy
 
     private void Awake()
     {
-
         this.spawnPos = SpawnPos.Side;
     }
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+
+    private void Start()
     {
-    }
-
-
-
-    // Override the Move method, leaving it empty as per your request
-    public override void Move()
-    {
-        // No movement logic for TreeEnemy
-    }
-
-    // Override the Die method to prevent the object from being destroyed
-    public override void Die(Collider2D other)
-    {
-        // Logic for dying, without destroying the object
-
-        // Optionally, disable the enemy or trigger other effects instead of destroying it
-        // Example: Disable the enemy's collider and stop movement
-        /*        GetComponent<Collider2D>().enabled = false;
-                isTriggered = false;*/
+        if (!rightSide)
+            transform.rotation = Quaternion.Euler(0, 0, -180);
     }
 
     private void OnTriggerEnter2D(Collider2D other)

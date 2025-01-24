@@ -1,12 +1,11 @@
 using UnityEngine;
 
-
 public class BeeEnemy : Enemy
 {
     private float flyHeight = 5f; // The height the bird flies at
     private float horizontalSpeed = 2f; // Horizontal movement speed
-
     private bool isMovingRight = true; // Determines the current horizontal direction
+    private float minSpeed = 4f, maxSpeed = 7f;
 
     private void Awake()
     {
@@ -15,17 +14,13 @@ public class BeeEnemy : Enemy
     }
     void Start()
     {
-        this.speed = UnityEngine.Random.Range(4, 7);
-        this.flyHeight = UnityEngine.Random.Range(4, 7);
-        this.horizontalSpeed = UnityEngine.Random.Range(1, 3);
+        this.speed = Random.Range(minSpeed, maxSpeed);
+        this.flyHeight = Random.Range(minSpeed, maxSpeed);
+        this.horizontalSpeed = Random.Range(1, 3);
     }
 
 
-
-    /// <summary>
-    /// Implements the movement behavior for the bird enemy.
-    /// </summary>
-    public override void Move()
+    protected override void Move()
     {
         // Simulate horizontal movement
         float horizontalMovement = horizontalSpeed * Time.deltaTime * (isMovingRight ? 1 : -1);
@@ -33,32 +28,27 @@ public class BeeEnemy : Enemy
 
         // Flip direction if the bird reaches a boundary
         if (transform.position.x > 3) // Example boundary on the right
-        {
             isMovingRight = false;
-        }
+
         else if (transform.position.x < -3) // Example boundary on the left
-        {
             isMovingRight = true;
-        }
     }
 
 
-    /// <summary>
-    /// Implements the death behavior for the bird enemy.
-    /// </summary>
-    public override void Die(Collider2D other)
+
+
+
+    protected void OnTriggerEnter2D(Collider2D other)
     {
+        if (other.gameObject.CompareTag("CameraTop"))
+        {
+            Trigger();
+        }
         if (other.CompareTag("Player"))
         {
             //sound
-            Destroy(gameObject); // Remove the Bee enemy from the scene
+            // Stop movement
         }
-
-    }
-
-
-    private void OnTriggerEnter2D(Collider2D other)
-    {
         Die(other);
     }
 }

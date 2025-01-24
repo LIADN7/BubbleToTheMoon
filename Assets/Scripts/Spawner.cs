@@ -48,8 +48,8 @@ public class Spawner : MonoBehaviour
         else if (enemy.spawnPos == SpawnPos.Side)
         {
             int chooseSide = Random.Range(0, 2);
-
-            return new UnityEngine.Vector3(chooseSide == 0 ? boundryL : boundryR, randomY, 0);
+            enemy.rightSide = chooseSide == 0 ? true : false;
+            return new UnityEngine.Vector3(enemy.rightSide ? boundryR : boundryL, randomY, 0);
         }
         else
             return new UnityEngine.Vector3(0, 0, 0);

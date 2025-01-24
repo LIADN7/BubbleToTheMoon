@@ -7,40 +7,27 @@ public enum SpawnPos
     Middle
 }
 
-public abstract class Enemy : MonoBehaviour
+public class Enemy : MonoBehaviour
 {
     [SerializeField] public SpawnPos spawnPos;
     [SerializeField] protected float speed; // Speed of the enemy movement
     [SerializeField] protected bool isTriggered = false; // Trigger state to control movement
+    [SerializeField] public bool rightSide = true;
 
-    void Update()
+    protected virtual void Update()
     {
         // If the enemy is triggered, allow it to move
         if (isTriggered)
-        {
             Move();
-        }
     }
 
+    protected virtual void Move() { }
 
-    /// <summary>
-    /// Handles the movement of the enemy. Must be implemented by derived classes.
-    /// </summary>
-    public abstract void Move();
+    protected virtual void Die(Collider2D other) { }
 
-
-    /// <summary>
-    /// Handles the death of the enemy, such as playing animations or destroying the object.
-    /// </summary>
-    public abstract void Die(Collider2D other);
-
-    /// <summary>
-    /// Call this method to trigger the enemy's movement.
-    /// </summary>
-    public void Trigger(bool flag = true)
+    protected virtual void Trigger(bool flag = true)
     {
         isTriggered = flag;
     }
-
 
 }
