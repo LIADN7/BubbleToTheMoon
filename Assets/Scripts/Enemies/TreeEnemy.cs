@@ -20,7 +20,6 @@ public class TreeEnemy: Enemy
     public override void Die(Collider2D other)
     {
         // Logic for dying, without destroying the object
-        Debug.Log("TreeEnemy has died, but is not destroyed.");
 
         // Optionally, disable the enemy or trigger other effects instead of destroying it
         // Example: Disable the enemy's collider and stop movement
