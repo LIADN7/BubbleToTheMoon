@@ -72,6 +72,7 @@ public class SoundManager : MonoBehaviour
             Debug.LogWarning($"Sound: {name} not found!");
             return;
         }
+        s.source.Stop();
     }
 
     public void PlayOneShot(SoundsNames name, int i)
@@ -82,7 +83,10 @@ public class SoundManager : MonoBehaviour
             Debug.LogWarning($"Sound: {name} not found!");
             return;
         }
-        if (i<s.clips.Length)
+        if(i<0) {
+            s.source.PlayOneShot(s.clips[0]);
+        }
+        else if (i<s.clips.Length)
         {
             s.source.PlayOneShot(s.clips[i]);
         }
@@ -103,8 +107,8 @@ public class SoundManager : MonoBehaviour
 }
 public enum SoundsNames 
 {
-BlowinGumUP, 
-BlowinGumDown,
+BlowingGumUp,
+    BlowingGumDown,
 GumExplosion,
 SnotUp,
 SnotDown,

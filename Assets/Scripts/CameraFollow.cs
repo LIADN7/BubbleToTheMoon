@@ -10,6 +10,7 @@ public class CameraFollow : MonoBehaviour
 
     private void Start()
     {
+        SoundManager.inst.Play(SoundsNames.MainMenuMusic);
         // Initialize the camera's starting Y position
         currentCameraY = transform.position.y;
     }
