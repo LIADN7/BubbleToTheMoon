@@ -1,12 +1,13 @@
 using System;
 using UnityEngine;
 using UnityEngine.Audio;
-    
-    [System.Serializable]
+using UnityEngine.UIElements;
+
+[System.Serializable]
     public class Sound
     {
         public String name;
-        public AudioClip clip;
+        public AudioClip[] clips;
         AudioMixerGroup outputGroup; 
         [Range(0f, 1f)] public float volume = 1f;
         [Range(0f, 3f)] public float pitch = 1f;
@@ -32,13 +33,18 @@ public class SoundManager : MonoBehaviour
             Destroy(gameObject);
             return;
         }
+                Debug.LogError($"Sound {SoundsNames.BlowinGumUP.ToString()} has no clips assigned!");
+
     foreach (Sound s in sounds)
         {
-            if (s.volume == 0f) s.volume =1f;
-            if (s.pitch == 0f) s.pitch = 1f;
+            if (s.clips == null || s.clips.Length == 0)
+    {
+        Debug.LogError($"Sound {s.name} has no clips assigned!");
+        continue;
+    }
 
             s.source = gameObject.AddComponent<AudioSource>();
-            s.source.clip = s.clip;
+            s.source.clip = s.clips[0];
             s.source.volume = s.volume;
             s.source.pitch = s.pitch;
             s.source.loop = s.loop;
@@ -65,6 +71,7 @@ public class SoundManager : MonoBehaviour
             return;
         }
     }
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -76,4 +83,29 @@ public class SoundManager : MonoBehaviour
     {
         
     }
+}
+public enum SoundsNames 
+{
+BlowinGumUP, 
+BlowinGumDown,
+GumExplosion,
+SnotUp,
+SnotDown,
+SnotExplosion,
+BeesIdleSound,
+BeesExplotion,
+BirdIdle,
+BirdExplotion,
+WinSound,
+LoseSound,
+StartGame,
+CountToGame,
+MainMenuMusic,
+MainGameMusic,
+AmbianceSound,
+PauseButton,
+ResumeButton,
+RestartGame,
+StartGameButton
+
 }
