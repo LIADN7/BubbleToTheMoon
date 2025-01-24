@@ -1,5 +1,4 @@
 using System.Collections.Generic;
-using System.Numerics;
 using UnityEngine;
 
 public class Spawner : MonoBehaviour
@@ -23,17 +22,17 @@ public class Spawner : MonoBehaviour
     {
         Enemy enemyToCreate = enemies[Random.Range(0, enemies.Length)];
         Enemy enemyCreated = Instantiate(enemyToCreate, controller.transform) as Enemy;
-        UnityEngine.Vector3 pos = WhereToSpawn(enemyCreated);
+        Vector3 pos = WhereToSpawn(enemyCreated);
         enemyCreated.transform.position = pos;
 
         return enemyCreated;
     }
 
-    private UnityEngine.Vector3 WhereToSpawn(Enemy enemy)
+    private Vector3 WhereToSpawn(Enemy enemy)
     {
         Renderer currentBGrenderer = controller.GetComponent<Renderer>();
         if (currentBGrenderer == null)
-            return new UnityEngine.Vector3(0, 0, 0);
+            return new Vector3(0, 0, 0);
 
         float boundryT = currentBGrenderer.bounds.max.y;
         float boundryB = currentBGrenderer.bounds.min.y;
@@ -43,16 +42,16 @@ public class Spawner : MonoBehaviour
         float randomX = Random.Range(boundryL, boundryR);
 
         if (enemy.spawnPos == SpawnPos.Middle)
-            return new UnityEngine.Vector3(randomX, randomY, 0);
+            return new Vector3(randomX, randomY, 0);
 
         else if (enemy.spawnPos == SpawnPos.Side)
         {
             int chooseSide = Random.Range(0, 2);
             enemy.rightSide = chooseSide == 0 ? true : false;
-            return new UnityEngine.Vector3(enemy.rightSide ? boundryR : boundryL, randomY, 0);
+            return new Vector3(enemy.rightSide ? boundryR : boundryL, randomY, 0);
         }
         else
-            return new UnityEngine.Vector3(0, 0, 0);
+            return new Vector3(0, 0, 0);
     }
 
 }

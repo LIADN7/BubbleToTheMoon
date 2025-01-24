@@ -13,9 +13,6 @@ public class BirdEnemy : Enemy
 
     private void Start()
     {
-        float angle = moveUpwards ? diagonalAngle : -diagonalAngle;
-        angle = moveRightToLeft ? 180f - angle : angle;
-        this.GetComponent<SpriteRenderer>().flipX = !moveRightToLeft;
         this.speed = Random.Range(minSpeed, maxSpeed);
     
         if (!rightSide)
