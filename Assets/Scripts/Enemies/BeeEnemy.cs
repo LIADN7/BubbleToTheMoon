@@ -3,7 +3,7 @@ using UnityEngine;
 
 public class BeeEnemy : Enemy
 {
-    private float flyHeight = 5f; // The height the bird flies at
+   private float flyHeight = 5f; // The height the bird flies at
     private float horizontalSpeed = 2f; // Horizontal movement speed
 
     private bool isMovingRight = true; // Determines the current horizontal direction
@@ -11,15 +11,13 @@ public class BeeEnemy : Enemy
 
     void Start()
     {
+        this.spawnPos = SpawnPos.Middle;
         this.speed = UnityEngine.Random.Range(4, 7);
         this.flyHeight = UnityEngine.Random.Range(4, 7);
         this.horizontalSpeed = UnityEngine.Random.Range(1, 3);
     }
 
-    void Update()
-    {
-        Move();
-    }
+
 
     /// <summary>
     /// Implements the movement behavior for the bird enemy.

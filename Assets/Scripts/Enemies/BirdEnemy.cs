@@ -11,6 +11,7 @@ public class BirdEnemy : Enemy
 
     private void Start()
     {
+        this.spawnPos = SpawnPos.Side;
         this.speed = UnityEngine.Random.Range(3, 6);
         int randNum = UnityEngine.Random.Range(0, 2);
         this.moveRightToLeft = randNum == 0;
@@ -24,10 +25,7 @@ public class BirdEnemy : Enemy
         movementDirection = Quaternion.Euler(0, 0, angle) * Vector3.right;
     }
 
-    private void Update()
-    {
-        Move();
-    }
+
 
     /// <summary>
     /// Handles diagonal movement for the bird.
