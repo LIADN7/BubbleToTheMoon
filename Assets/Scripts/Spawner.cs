@@ -13,14 +13,6 @@ public class Spawner : MonoBehaviour
     BGController controller;
 
 
-    public Enemy Spawn()
-    {
-        Enemy enemy = enemies[Random.Range(0, enemies.Length)];
-        UnityEngine.Vector3 pos = WhereToSpawn(enemy);
-        return Instantiate(enemy, pos, UnityEngine.Quaternion.identity) as Enemy;
-
-    }
-
     private void Start()
     {
         controller = GetComponentInParent<BGController>();
@@ -29,9 +21,12 @@ public class Spawner : MonoBehaviour
             spawnedEnemies.Add(Spawn());
         }
     }
-
-    private void OnDestroy()
+    public Enemy Spawn()
     {
+        Debug.Log("in spawn");
+        Enemy enemy = enemies[Random.Range(0, enemies.Length)];
+        UnityEngine.Vector3 pos = WhereToSpawn(enemy);
+        return Instantiate(enemy, pos, UnityEngine.Quaternion.identity) as Enemy;
 
     }
 
