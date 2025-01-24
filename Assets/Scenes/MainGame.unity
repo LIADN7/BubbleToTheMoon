@@ -492,7 +492,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8734649759324477183, guid: 9fb3aafb72c884c4a9b4ec2623adc8f3, type: 3}
       propertyPath: isTriggered
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
