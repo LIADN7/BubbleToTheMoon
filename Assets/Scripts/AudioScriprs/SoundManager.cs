@@ -34,15 +34,14 @@ public class SoundManager : MonoBehaviour
             Destroy(gameObject);
             return;
         }
-                Debug.LogError($"Sound {SoundsNames.BlowinGumUP.ToString()} has no clips assigned!");
 
-    foreach (Sound s in sounds)
+        foreach (Sound s in sounds)
         {
             if (s.clips == null || s.clips.Length == 0)
-    {
-        Debug.LogError($"Sound {s.name} has no clips assigned!");
-        continue;
-    }
+            {
+                Debug.LogError($"Sound {s.name} has no clips assigned!");
+                continue;
+        }
 
             s.source = gameObject.AddComponent<AudioSource>();
             s.source.clip = s.clips[0];
@@ -54,24 +53,40 @@ public class SoundManager : MonoBehaviour
         }
         
     }
-    public void Play(string name)
+    public void Play(SoundsNames name)
     {
-        Sound s = System.Array.Find(sounds, sound => sound.name == name);
+        Sound s = System.Array.Find(sounds, sound => sound.name == name.ToString());
         if (s == null)
         {
             Debug.LogWarning($"Sound: {name} not found!");
             return;
         }
+        Debug.Log("Player hit sound play!");
         s.source.Play();
     }
-    public void Stop(string name)
+    public void Stop(SoundsNames name)
     {
-        Sound s = System.Array.Find(sounds, sound => sound.name == name);
+        Sound s = System.Array.Find(sounds, sound => sound.name == name.ToString());
         if (s == null)
         {
             Debug.LogWarning($"Sound: {name} not found!");
             return;
         }
+    }
+
+    public void PlayOneShot(SoundsNames name, int i)
+    {
+        Sound s = System.Array.Find(sounds, sound => sound.name == name.ToString());
+        if (s == null)
+        {
+            Debug.LogWarning($"Sound: {name} not found!");
+            return;
+        }
+        if (i<s.clips.Length)
+        {
+            s.source.PlayOneShot(s.clips[i]);
+        }
+
     }
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
