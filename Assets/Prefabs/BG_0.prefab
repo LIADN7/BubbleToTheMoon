@@ -103,6 +103,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5b652d3dc5166d0418b87fbeedaaf8d5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  level: 0
+  spawnCount: 4
   enemies:
   - {fileID: 6569268340490211693, guid: 533b98753774bba4199db1f3b1813a5b, type: 3}
   - {fileID: 8734649759324477183, guid: 9fb3aafb72c884c4a9b4ec2623adc8f3, type: 3}

@@ -9,7 +9,7 @@ public enum SpawnPos
 
 public abstract class Enemy : MonoBehaviour
 {
-    public SpawnPos spawnPos { get; set; } = SpawnPos.None;
+    [SerializeField] public SpawnPos spawnPos;
     [SerializeField] protected float speed; // Speed of the enemy movement
     [SerializeField] protected bool isTriggered = false; // Trigger state to control movement
 

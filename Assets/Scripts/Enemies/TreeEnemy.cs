@@ -1,11 +1,16 @@
 using UnityEngine;
 
-public class TreeEnemy: Enemy
+public class TreeEnemy : Enemy
 {
+
+    private void Awake()
+    {
+
+        this.spawnPos = SpawnPos.Side;
+    }
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        this.spawnPos = SpawnPos.Side;
     }
 
 
@@ -23,8 +28,8 @@ public class TreeEnemy: Enemy
 
         // Optionally, disable the enemy or trigger other effects instead of destroying it
         // Example: Disable the enemy's collider and stop movement
-/*        GetComponent<Collider2D>().enabled = false;
-        isTriggered = false;*/
+        /*        GetComponent<Collider2D>().enabled = false;
+                isTriggered = false;*/
     }
 
     private void OnTriggerEnter2D(Collider2D other)

@@ -9,9 +9,12 @@ public class BirdEnemy : Enemy
 
     private Vector3 movementDirection;
 
-    private void Start()
+    private void Awake()
     {
         this.spawnPos = SpawnPos.Side;
+    }
+    private void Start()
+    {
         this.speed = UnityEngine.Random.Range(4, 7);
         int randNum = UnityEngine.Random.Range(0, 2);
         this.moveRightToLeft = randNum == 0;
@@ -19,7 +22,7 @@ public class BirdEnemy : Enemy
         // Calculate initial movement direction based on angle and movement flags
         float angle = moveUpwards ? diagonalAngle : -diagonalAngle;
         angle = moveRightToLeft ? 180f - angle : angle;
-        this.GetComponent< SpriteRenderer>().flipX= !moveRightToLeft;
+        this.GetComponent<SpriteRenderer>().flipX = !moveRightToLeft;
         //GetComponent<SpriteRenderer>().flipX= !this.moveRightToLeft;
         //transform.rotation = Quaternion.Euler(0, 0, -1*angle) ;
         movementDirection = Quaternion.Euler(0, 0, angle) * Vector3.right;
