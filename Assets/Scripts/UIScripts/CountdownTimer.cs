@@ -1,14 +1,17 @@
 using UnityEngine;
 using TMPro;
 using System.Collections;
+using static GameManager;
 
 public class CountdownTimer : MonoBehaviour
 {
     TextMeshProUGUI countdownText;
     [SerializeField] float countdownTime = 3f;
+    private GameManager manager;
 
     private void Awake()
     {
+        this.manager = GameManager.inst;
         countdownText = GetComponent<TextMeshProUGUI>();
     }
     public void PlayCoundown()
@@ -33,7 +36,9 @@ public class CountdownTimer : MonoBehaviour
         countdownText.text = "GO!";
 
         yield return new WaitForSeconds(1f);
-
+        manager.ChangeState(GameState.Play);
         countdownText.text = "";
     }
+
+
 }

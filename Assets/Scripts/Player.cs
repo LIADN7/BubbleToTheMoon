@@ -1,6 +1,7 @@
 using System.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using static GameManager;
 
 public class Player : MonoBehaviour
 {
@@ -9,6 +10,7 @@ public class Player : MonoBehaviour
     [SerializeField] protected KeyCode upKey;
     [SerializeField] protected KeyCode downKey;
     [SerializeField] protected SpriteRenderer playerSprite;
+    private GameManager manager;
 
     private float speedX = 3f; // Constant horizontal speed
     [SerializeField] private float maxSpeedY = 5f; // Maximum vertical speed
@@ -17,17 +19,20 @@ public class Player : MonoBehaviour
     private float hitAddForceY = -1f;
     private float currentSpeedY = 0f; // Current vertical speed
     private bool isHit = false; // Tracks if the player was hit
-
+    [SerializeField] protected bool isTriggered = false; // Trigger state to control movement
     void Start()
     {
-        
+        this.manager = GameManager.inst;
     }
 
     // Update is called once per frame
     void Update()
     {
+        if (this.manager.CurrentState== GameState.Play)
+        {
             HandleMovement();
             HandleSpeedChange();
+        }
     }
 
     /// <summary>
@@ -109,11 +114,21 @@ public class Player : MonoBehaviour
     {
         Debug.Log("Player won the game!");
         // Handle player win logic here
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            
+        }
     }
 
     private void OnPlayerLoss()
     {
         Debug.Log("Player lost the game!");
         // Handle player loss logic here
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+
+        }
     }
+
+
 }

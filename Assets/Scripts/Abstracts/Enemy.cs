@@ -1,16 +1,17 @@
 using UnityEngine;
 
-    public enum SpawnPos{
-        None,
-        Side,
-        Middle
-    }
+public enum SpawnPos
+{
+    None,
+    Side,
+    Middle
+}
 
 public abstract class Enemy : MonoBehaviour
 {
-    protected SpawnPos spawnPos { get; set; } = SpawnPos.None ;
+    public SpawnPos spawnPos { get; set; } = SpawnPos.None;
     [SerializeField] protected float speed; // Speed of the enemy movement
-    [SerializeField] protected bool isTriggered=false; // Trigger state to control movement
+    [SerializeField] protected bool isTriggered = false; // Trigger state to control movement
 
     void Update()
     {
@@ -36,7 +37,8 @@ public abstract class Enemy : MonoBehaviour
     /// <summary>
     /// Call this method to trigger the enemy's movement.
     /// </summary>
-    public void Trigger(bool flag=true) {
+    public void Trigger(bool flag = true)
+    {
         isTriggered = flag;
     }
 
