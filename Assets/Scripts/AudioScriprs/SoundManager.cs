@@ -8,7 +8,7 @@ using UnityEngine.UIElements;
     {
         public String name;
         public AudioClip[] clips;
-        AudioMixerGroup outputGroup; 
+        public AudioMixerGroup Output; 
         [Range(0f, 1f)] public float volume = 1f;
         [Range(0f, 3f)] public float pitch = 1f;
         public bool loop; 
@@ -23,6 +23,7 @@ public class SoundManager : MonoBehaviour
     public Sound[] sounds;
     private void Awake()
     {
+        
         if (inst == null)
         {
             inst = this;
@@ -48,6 +49,7 @@ public class SoundManager : MonoBehaviour
             s.source.volume = s.volume;
             s.source.pitch = s.pitch;
             s.source.loop = s.loop;
+            s.source.outputAudioMixerGroup = s.Output;
             // s.source.outputAudioMixerGroup = s.outputGroup;
         }
         
@@ -106,6 +108,7 @@ AmbianceSound,
 PauseButton,
 ResumeButton,
 RestartGame,
-StartGameButton
+StartGameButton,
+BirdAnimation,
 
 }
