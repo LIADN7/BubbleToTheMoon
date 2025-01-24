@@ -48,7 +48,7 @@ MonoBehaviour:
   - name: SnotExplosion
     clips:
     - {fileID: 8300000, guid: 7fd083f0c3a344fdcb5d6e0f76e35e53, type: 3}
-    Output: {fileID: 0}
+    Output: {fileID: 6711587552732608871, guid: fab2831f9eb0a46bea31fa432af14303, type: 2}
     volume: 1
     pitch: 1
     loop: 0
@@ -59,7 +59,7 @@ MonoBehaviour:
     - {fileID: 8300000, guid: a2bcfb8fec74a473b8d66b7164e862a9, type: 3}
     - {fileID: 8300000, guid: d34e02eab4ad94b0e8c99efc41daf491, type: 3}
     - {fileID: 8300000, guid: a3adc1c439c30414da5539a17a735b02, type: 3}
-    Output: {fileID: 0}
+    Output: {fileID: 6711587552732608871, guid: fab2831f9eb0a46bea31fa432af14303, type: 2}
     volume: 1
     pitch: 1
     loop: 0
@@ -70,7 +70,7 @@ MonoBehaviour:
     - {fileID: 8300000, guid: b03102fc5e994466d8283c1bc63bb6d0, type: 3}
     - {fileID: 8300000, guid: 0e85daf496abf47b8944f84506c17fbd, type: 3}
     - {fileID: 8300000, guid: 248aa4b03daff4024a5ffa225bc87ac4, type: 3}
-    Output: {fileID: 0}
+    Output: {fileID: 6711587552732608871, guid: fab2831f9eb0a46bea31fa432af14303, type: 2}
     volume: 1
     pitch: 1
     loop: 0
@@ -78,7 +78,7 @@ MonoBehaviour:
   - name: GumExplosion
     clips:
     - {fileID: 8300000, guid: e2012d56e1764440ca956d3315a2aa1f, type: 3}
-    Output: {fileID: 0}
+    Output: {fileID: 1679821099831602088, guid: fab2831f9eb0a46bea31fa432af14303, type: 2}
     volume: 1
     pitch: 1
     loop: 0
@@ -89,7 +89,7 @@ MonoBehaviour:
     - {fileID: 8300000, guid: 30ad487fa69e94264bd8835f1191eb04, type: 3}
     - {fileID: 8300000, guid: d5f81288835f44da79bc543bfdb38d9e, type: 3}
     - {fileID: 8300000, guid: 857d2d7c9aa9c428087bc22078198e56, type: 3}
-    Output: {fileID: 0}
+    Output: {fileID: 1679821099831602088, guid: fab2831f9eb0a46bea31fa432af14303, type: 2}
     volume: 1
     pitch: 1
     loop: 0
@@ -100,7 +100,7 @@ MonoBehaviour:
     - {fileID: 8300000, guid: 78e0f414674004830aac709e87d6ecc5, type: 3}
     - {fileID: 8300000, guid: 28c9f5964c8354681b2d1f6a0a7fdbfa, type: 3}
     - {fileID: 8300000, guid: c733825ebd6f84f069740c0a441620ed, type: 3}
-    Output: {fileID: 0}
+    Output: {fileID: 1679821099831602088, guid: fab2831f9eb0a46bea31fa432af14303, type: 2}
     volume: 1
     pitch: 1
     loop: 0
@@ -108,7 +108,7 @@ MonoBehaviour:
   - name: BeesIdle
     clips:
     - {fileID: 8300000, guid: 818fece1c27224488b7107203a388361, type: 3}
-    Output: {fileID: 0}
+    Output: {fileID: -5869262110335406333, guid: fab2831f9eb0a46bea31fa432af14303, type: 2}
     volume: 1
     pitch: 1
     loop: 1
@@ -116,7 +116,7 @@ MonoBehaviour:
   - name: BeesExplotion
     clips:
     - {fileID: 8300000, guid: 79e68475dfc404b59a7d4e9b06e48a40, type: 3}
-    Output: {fileID: 0}
+    Output: {fileID: -5869262110335406333, guid: fab2831f9eb0a46bea31fa432af14303, type: 2}
     volume: 1
     pitch: 1
     loop: 0
@@ -124,7 +124,7 @@ MonoBehaviour:
   - name: PauseButton
     clips:
     - {fileID: 8300000, guid: 455236a0dc90b43b5b83925d6330d890, type: 3}
-    Output: {fileID: 0}
+    Output: {fileID: 3516161906283948418, guid: fab2831f9eb0a46bea31fa432af14303, type: 2}
     volume: 1
     pitch: 1
     loop: 0
@@ -132,7 +132,7 @@ MonoBehaviour:
   - name: RestartGame
     clips:
     - {fileID: 8300000, guid: 3463d7992c9804b27ac97f5612c66f34, type: 3}
-    Output: {fileID: 0}
+    Output: {fileID: 3516161906283948418, guid: fab2831f9eb0a46bea31fa432af14303, type: 2}
     volume: 1
     pitch: 1
     loop: 0
@@ -140,7 +140,7 @@ MonoBehaviour:
   - name: ResumeButton
     clips:
     - {fileID: 8300000, guid: b3db3afaa73424f9cb6f321fdb82b13e, type: 3}
-    Output: {fileID: 0}
+    Output: {fileID: 3516161906283948418, guid: fab2831f9eb0a46bea31fa432af14303, type: 2}
     volume: 1
     pitch: 1
     loop: 0
@@ -148,7 +148,7 @@ MonoBehaviour:
   - name: StartGameButton
     clips:
     - {fileID: 8300000, guid: 3c5891a5d121d4383b6c1b013ac4c588, type: 3}
-    Output: {fileID: 0}
+    Output: {fileID: 3516161906283948418, guid: fab2831f9eb0a46bea31fa432af14303, type: 2}
     volume: 1
     pitch: 1
     loop: 0
@@ -156,7 +156,7 @@ MonoBehaviour:
   - name: CountToGame
     clips:
     - {fileID: 8300000, guid: f8da6a6ccbcec4f58907f251ffe41b83, type: 3}
-    Output: {fileID: 0}
+    Output: {fileID: -344685320796238877, guid: fab2831f9eb0a46bea31fa432af14303, type: 2}
     volume: 1
     pitch: 1
     loop: 0
@@ -164,7 +164,7 @@ MonoBehaviour:
   - name: LoseSound
     clips:
     - {fileID: 8300000, guid: 7a697c74da544440d83f3b0530a264bb, type: 3}
-    Output: {fileID: 0}
+    Output: {fileID: -344685320796238877, guid: fab2831f9eb0a46bea31fa432af14303, type: 2}
     volume: 1
     pitch: 1
     loop: 0
@@ -172,7 +172,7 @@ MonoBehaviour:
   - name: WinSound
     clips:
     - {fileID: 8300000, guid: f1c27c90c2d5a480ba5ff0a83432d3a9, type: 3}
-    Output: {fileID: 0}
+    Output: {fileID: -344685320796238877, guid: fab2831f9eb0a46bea31fa432af14303, type: 2}
     volume: 1
     pitch: 1
     loop: 0
@@ -180,7 +180,7 @@ MonoBehaviour:
   - name: MainMenuMusic
     clips:
     - {fileID: 8300000, guid: 6c81a1b91c0c44588b4ba2c58ada4a21, type: 3}
-    Output: {fileID: 0}
+    Output: {fileID: -936263469554975801, guid: fab2831f9eb0a46bea31fa432af14303, type: 2}
     volume: 1
     pitch: 1
     loop: 1
@@ -188,7 +188,7 @@ MonoBehaviour:
   - name: MainGameMusic
     clips:
     - {fileID: 8300000, guid: 03c4f374f3ebe4fd99bbdb7db32d63ca, type: 3}
-    Output: {fileID: 0}
+    Output: {fileID: -936263469554975801, guid: fab2831f9eb0a46bea31fa432af14303, type: 2}
     volume: 1
     pitch: 1
     loop: 0
