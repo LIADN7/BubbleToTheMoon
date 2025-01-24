@@ -8,7 +8,7 @@ using UnityEngine.UIElements;
     {
         public String name;
         public AudioClip[] clips;
-        AudioMixerGroup outputGroup; 
+        public AudioMixerGroup Output; 
         [Range(0f, 1f)] public float volume = 1f;
         [Range(0f, 3f)] public float pitch = 1f;
         public bool loop; 
@@ -23,6 +23,7 @@ public class SoundManager : MonoBehaviour
     public Sound[] sounds;
     private void Awake()
     {
+        
         if (inst == null)
         {
             inst = this;
@@ -33,43 +34,59 @@ public class SoundManager : MonoBehaviour
             Destroy(gameObject);
             return;
         }
-                Debug.LogError($"Sound {SoundsNames.BlowinGumUP.ToString()} has no clips assigned!");
 
-    foreach (Sound s in sounds)
+        foreach (Sound s in sounds)
         {
             if (s.clips == null || s.clips.Length == 0)
-    {
-        Debug.LogError($"Sound {s.name} has no clips assigned!");
-        continue;
-    }
+            {
+                Debug.LogError($"Sound {s.name} has no clips assigned!");
+                continue;
+        }
 
             s.source = gameObject.AddComponent<AudioSource>();
             s.source.clip = s.clips[0];
             s.source.volume = s.volume;
             s.source.pitch = s.pitch;
             s.source.loop = s.loop;
+            s.source.outputAudioMixerGroup = s.Output;
             // s.source.outputAudioMixerGroup = s.outputGroup;
         }
         
     }
-    public void Play(string name)
+    public void Play(SoundsNames name)
     {
-        Sound s = System.Array.Find(sounds, sound => sound.name == name);
+        Sound s = System.Array.Find(sounds, sound => sound.name == name.ToString());
         if (s == null)
         {
             Debug.LogWarning($"Sound: {name} not found!");
             return;
         }
+        Debug.Log("Player hit sound play!");
         s.source.Play();
     }
-    public void Stop(string name)
+    public void Stop(SoundsNames name)
     {
-        Sound s = System.Array.Find(sounds, sound => sound.name == name);
+        Sound s = System.Array.Find(sounds, sound => sound.name == name.ToString());
         if (s == null)
         {
             Debug.LogWarning($"Sound: {name} not found!");
             return;
         }
+    }
+
+    public void PlayOneShot(SoundsNames name, int i)
+    {
+        Sound s = System.Array.Find(sounds, sound => sound.name == name.ToString());
+        if (s == null)
+        {
+            Debug.LogWarning($"Sound: {name} not found!");
+            return;
+        }
+        if (i<s.clips.Length)
+        {
+            s.source.PlayOneShot(s.clips[i]);
+        }
+
     }
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -106,6 +123,7 @@ AmbianceSound,
 PauseButton,
 ResumeButton,
 RestartGame,
-StartGameButton
+StartGameButton,
+BirdAnimation,
 
 }

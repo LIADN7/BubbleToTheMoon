@@ -1,0 +1,195 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &7965113052855348134
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1394369360681964902}
+  - component: {fileID: 5977058228574070652}
+  m_Layer: 0
+  m_Name: AudioManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1394369360681964902
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7965113052855348134}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5977058228574070652
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7965113052855348134}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e4496e93efc004310a875c1ff4db5cc4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sounds:
+  - name: SnotExplosion
+    clips:
+    - {fileID: 8300000, guid: 7fd083f0c3a344fdcb5d6e0f76e35e53, type: 3}
+    Output: {fileID: 0}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: SnotUp
+    clips:
+    - {fileID: 8300000, guid: 6870d644b52b14416a5ad145b6011893, type: 3}
+    - {fileID: 8300000, guid: a2bcfb8fec74a473b8d66b7164e862a9, type: 3}
+    - {fileID: 8300000, guid: d34e02eab4ad94b0e8c99efc41daf491, type: 3}
+    - {fileID: 8300000, guid: a3adc1c439c30414da5539a17a735b02, type: 3}
+    Output: {fileID: 0}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: SnotDown
+    clips:
+    - {fileID: 8300000, guid: e97a40619caf749ecaf6432d0b202bf2, type: 3}
+    - {fileID: 8300000, guid: b03102fc5e994466d8283c1bc63bb6d0, type: 3}
+    - {fileID: 8300000, guid: 0e85daf496abf47b8944f84506c17fbd, type: 3}
+    - {fileID: 8300000, guid: 248aa4b03daff4024a5ffa225bc87ac4, type: 3}
+    Output: {fileID: 0}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: GumExplosion
+    clips:
+    - {fileID: 8300000, guid: e2012d56e1764440ca956d3315a2aa1f, type: 3}
+    Output: {fileID: 0}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: BlowingGumUp
+    clips:
+    - {fileID: 8300000, guid: b3d608d8616f0440e8dac2f8f814903c, type: 3}
+    - {fileID: 8300000, guid: 30ad487fa69e94264bd8835f1191eb04, type: 3}
+    - {fileID: 8300000, guid: d5f81288835f44da79bc543bfdb38d9e, type: 3}
+    - {fileID: 8300000, guid: 857d2d7c9aa9c428087bc22078198e56, type: 3}
+    Output: {fileID: 0}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: BlowingGumDown
+    clips:
+    - {fileID: 8300000, guid: d771bbe9e6aaa4f86b6e43f9c78a369f, type: 3}
+    - {fileID: 8300000, guid: 78e0f414674004830aac709e87d6ecc5, type: 3}
+    - {fileID: 8300000, guid: 28c9f5964c8354681b2d1f6a0a7fdbfa, type: 3}
+    - {fileID: 8300000, guid: c733825ebd6f84f069740c0a441620ed, type: 3}
+    Output: {fileID: 0}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: BeesIdle
+    clips:
+    - {fileID: 8300000, guid: 818fece1c27224488b7107203a388361, type: 3}
+    Output: {fileID: 0}
+    volume: 1
+    pitch: 1
+    loop: 1
+    source: {fileID: 0}
+  - name: BeesExplotion
+    clips:
+    - {fileID: 8300000, guid: 79e68475dfc404b59a7d4e9b06e48a40, type: 3}
+    Output: {fileID: 0}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: PauseButton
+    clips:
+    - {fileID: 8300000, guid: 455236a0dc90b43b5b83925d6330d890, type: 3}
+    Output: {fileID: 0}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: RestartGame
+    clips:
+    - {fileID: 8300000, guid: 3463d7992c9804b27ac97f5612c66f34, type: 3}
+    Output: {fileID: 0}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: ResumeButton
+    clips:
+    - {fileID: 8300000, guid: b3db3afaa73424f9cb6f321fdb82b13e, type: 3}
+    Output: {fileID: 0}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: StartGameButton
+    clips:
+    - {fileID: 8300000, guid: 3c5891a5d121d4383b6c1b013ac4c588, type: 3}
+    Output: {fileID: 0}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: CountToGame
+    clips:
+    - {fileID: 8300000, guid: f8da6a6ccbcec4f58907f251ffe41b83, type: 3}
+    Output: {fileID: 0}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: LoseSound
+    clips:
+    - {fileID: 8300000, guid: 7a697c74da544440d83f3b0530a264bb, type: 3}
+    Output: {fileID: 0}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: WinSound
+    clips:
+    - {fileID: 8300000, guid: f1c27c90c2d5a480ba5ff0a83432d3a9, type: 3}
+    Output: {fileID: 0}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: MainMenuMusic
+    clips:
+    - {fileID: 8300000, guid: 6c81a1b91c0c44588b4ba2c58ada4a21, type: 3}
+    Output: {fileID: 0}
+    volume: 1
+    pitch: 1
+    loop: 1
+    source: {fileID: 0}
+  - name: MainGameMusic
+    clips:
+    - {fileID: 8300000, guid: 03c4f374f3ebe4fd99bbdb7db32d63ca, type: 3}
+    Output: {fileID: 0}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}

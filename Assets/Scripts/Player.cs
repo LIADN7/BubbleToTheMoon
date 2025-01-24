@@ -10,15 +10,15 @@ public class Player : MonoBehaviour
     [SerializeField] protected KeyCode upKey;
     [SerializeField] protected KeyCode downKey;
     [SerializeField] protected SpriteRenderer playerSprite;
-    private GameManager manager;
+    protected GameManager manager;
 
-    private float speedX = 3f; // Constant horizontal speed
-    [SerializeField] private float maxSpeedY = 5f; // Maximum vertical speed
-    [SerializeField] private float speedStepY = 1f; // Increment/Decrement step for vertical speed
-    
-    private float hitAddForceY = -1f;
-    private float currentSpeedY = 0f; // Current vertical speed
-    private bool isHit = false; // Tracks if the player was hit
+    protected float speedX = 3f; // Constant horizontal speed
+    [SerializeField] protected float maxSpeedY = 5f; // Maximum vertical speed
+    [SerializeField] protected float speedStepY = 1f; // Increment/Decrement step for vertical speed
+
+    protected float hitAddForceY = -1f;
+    protected float currentSpeedY = 0f; // Current vertical speed
+    protected bool isHit = false; // Tracks if the player was hit
     [SerializeField] protected bool isTriggered = false; // Trigger state to control movement
     void Start()
     {
@@ -48,7 +48,7 @@ public class Player : MonoBehaviour
     /// <summary>
     /// Applies a downward force when the player is hit.
     /// </summary>
-    private void ApplyHitForce()
+    protected virtual void ApplyHitForce()
     {
         StartCoroutine(HitForceCountDown(1F));
     }
@@ -66,7 +66,7 @@ public class Player : MonoBehaviour
     /// <summary>
     /// Handles player movement based on input.
     /// </summary>
-    private void HandleMovement()
+    protected virtual void HandleMovement()
     {
         // Constant horizontal movement
         float x = Input.GetKey(rightKey) ? 1 : Input.GetKey(leftKey) ? -1 : 0;
@@ -84,7 +84,7 @@ public class Player : MonoBehaviour
     /// <summary>
     /// Adjusts vertical speed when up or down keys are pressed.
     /// </summary>
-    private void HandleSpeedChange()
+    protected virtual void HandleSpeedChange()
     {
         if (!isHit)
         {
@@ -105,7 +105,7 @@ public class Player : MonoBehaviour
 
 
 
-    private void OnTriggerEnter2D(Collider2D other)
+    protected virtual void OnTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag("Enemy"))
         {
@@ -113,14 +113,14 @@ public class Player : MonoBehaviour
         }
     }
 
-    private void OnPlayerHit()
+    protected virtual void OnPlayerHit()
     {
         Debug.Log("Player hit by an enemy!");
         currentSpeedY = hitAddForceY; // Reset vertical speed
         ApplyHitForce();
     }
 
-    private void OnPlayerWin()
+    protected virtual void OnPlayerWin()
     {
         Debug.Log("Player won the game!");
         // Handle player win logic here
@@ -129,7 +129,7 @@ public class Player : MonoBehaviour
         
     }
 
-    private void OnPlayerLoss()
+    protected virtual void OnPlayerLoss()
     {
         Debug.Log("Player lost the game!");
         // Handle player loss logic here
