@@ -5,10 +5,12 @@ using static GameManager;
 
 public class Player : MonoBehaviour
 {
-    [SerializeField] protected KeyCode rightKey;
-    [SerializeField] protected KeyCode leftKey;
+
     [SerializeField] protected KeyCode upKey;
     [SerializeField] protected KeyCode downKey;
+    [SerializeField] protected KeyCode rightKey;
+    [SerializeField] protected KeyCode leftKey;
+
     [SerializeField] protected SpriteRenderer playerSprite;
     protected GameManager manager;
 
@@ -18,6 +20,7 @@ public class Player : MonoBehaviour
 
     protected float hitAddForceY = -1f;
     protected float currentSpeedY = 0f; // Current vertical speed
+    protected int currentLevelY = 0; // Current vertical speed
     protected bool isHit = false; // Tracks if the player was hit
     [SerializeField] protected bool isTriggered = false; // Trigger state to control movement
     void Start()
@@ -31,7 +34,7 @@ public class Player : MonoBehaviour
         if (this.manager.CurrentState== GameState.Play)
         {
             HandleMovement();
-            HandleSpeedChange();
+            HandleSpeedOnKey();
         }
 
         if (Input.GetKeyDown(KeyCode.Space))
@@ -84,7 +87,7 @@ public class Player : MonoBehaviour
     /// <summary>
     /// Adjusts vertical speed when up or down keys are pressed.
     /// </summary>
-    protected virtual void HandleSpeedChange()
+    protected virtual void HandleSpeedOnKey()
     {
         if (!isHit)
         {
@@ -92,18 +95,31 @@ public class Player : MonoBehaviour
             // Increase vertical speed when upKey is pressed
             if (Input.GetKeyDown(upKey) && currentSpeedY < maxSpeedY)
             {
-                currentSpeedY += speedStepY;
+                //currentLevelY++;
+                //currentSpeedY += speedStepY;
+                HandleUpAndDownChange(1);
+            }
+            if(Input.GetKeyDown(upKey) && currentSpeedY >= maxSpeedY)
+            {
+                OnPlayerHit();
             }
 
             // Decrease vertical speed when downKey is pressed
             if (Input.GetKeyDown(downKey) && currentSpeedY > 0)
             {
-                currentSpeedY -= speedStepY;
+                //currentLevelY--;
+                //currentSpeedY -= speedStepY;
+                HandleUpAndDownChange(-1);
             }
         }
     }
 
-
+    protected virtual void HandleUpAndDownChange(int direction)
+    {
+                currentLevelY+= direction;
+                currentSpeedY += speedStepY* direction;
+           
+    }
 
     protected virtual void OnTriggerEnter2D(Collider2D other)
     {
@@ -117,6 +133,7 @@ public class Player : MonoBehaviour
     {
         Debug.Log("Player hit by an enemy!");
         currentSpeedY = hitAddForceY; // Reset vertical speed
+        currentLevelY = -1;
         ApplyHitForce();
     }
 
