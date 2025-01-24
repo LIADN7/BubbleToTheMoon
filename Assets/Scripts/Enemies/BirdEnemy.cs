@@ -5,23 +5,23 @@ public class BirdEnemy : Enemy
 {
     private bool moveRightToLeft = true; // Determines if the bird moves from right to left
     private bool moveUpwards = false; // Determines if the bird moves diagonally up
-    private float diagonalAngle = 45f; // Angle of diagonal movement in degrees
+    private float diagonalAngle = 15f; // Angle of diagonal movement in degrees
 
     private Vector3 movementDirection;
 
     private void Start()
     {
         this.spawnPos = SpawnPos.Side;
-        this.speed = UnityEngine.Random.Range(3, 6);
+        this.speed = UnityEngine.Random.Range(4, 7);
         int randNum = UnityEngine.Random.Range(0, 2);
         this.moveRightToLeft = randNum == 0;
 
         // Calculate initial movement direction based on angle and movement flags
         float angle = moveUpwards ? diagonalAngle : -diagonalAngle;
         angle = moveRightToLeft ? 180f - angle : angle;
-
+        this.GetComponent< SpriteRenderer>().flipX= !moveRightToLeft;
         //GetComponent<SpriteRenderer>().flipX= !this.moveRightToLeft;
-        transform.rotation = Quaternion.Euler(0, 0, -1*angle) ;
+        //transform.rotation = Quaternion.Euler(0, 0, -1*angle) ;
         movementDirection = Quaternion.Euler(0, 0, angle) * Vector3.right;
     }
 
@@ -49,7 +49,7 @@ public class BirdEnemy : Enemy
     private bool IsOutOfScreen()
     {
         Vector3 screenPoint = Camera.main.WorldToViewportPoint(transform.position);
-        return screenPoint.x < -0.1f || screenPoint.x > 1.1f || screenPoint.y < -0.1f || screenPoint.y > 1.1f;
+        return screenPoint.x < -0.7f || screenPoint.x > 1.7f || screenPoint.y < -0.7f || screenPoint.y > 1.7f;
     }
 
     /// <summary>
@@ -61,7 +61,7 @@ public class BirdEnemy : Enemy
         if (other.CompareTag("Player"))
         {
             //sound
-            Destroy(gameObject); // Remove the Bee enemy from the scene
+            //Destroy(gameObject); // Remove the Bee enemy from the scene
         }
     }
 
