@@ -33,6 +33,16 @@ public class Player : MonoBehaviour
             HandleMovement();
             HandleSpeedChange();
         }
+
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            OnPlayerLoss();
+        }
+        if (Input.GetKeyDown(KeyCode.V))
+        {
+            OnPlayerWin();
+        }
+
     }
 
     /// <summary>
@@ -114,20 +124,18 @@ public class Player : MonoBehaviour
     {
         Debug.Log("Player won the game!");
         // Handle player win logic here
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
+
             SceneManager.LoadScene("MainGame");
-        }
+        
     }
 
     private void OnPlayerLoss()
     {
         Debug.Log("Player lost the game!");
         // Handle player loss logic here
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
+
             SceneManager.LoadScene("MainGame");
-        }
+        
     }
 
 
