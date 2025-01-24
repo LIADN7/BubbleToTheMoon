@@ -4,22 +4,12 @@ using UnityEngine;
 
 public class Spawner : MonoBehaviour
 {
-    [SerializeField] int level { get; set; }
-    [SerializeField] float boundryL { get; set; }
-    [SerializeField] float boundryR { get; set; }
-    [SerializeField] int spawnCount { get; set; }
+    [SerializeField] int level;
+    [SerializeField] int spawnCount;
     [SerializeField] Enemy[] enemies;
     HashSet<Enemy> spawnedEnemies { get; set; } = new HashSet<Enemy>();
     BGController controller;
 
-
-    public Enemy Spawn()
-    {
-        Enemy enemy = enemies[Random.Range(0, enemies.Length)];
-        UnityEngine.Vector3 pos = WhereToSpawn(enemy);
-        return Instantiate(enemy, pos, UnityEngine.Quaternion.identity) as Enemy;
-
-    }
 
     private void Start()
     {
@@ -29,25 +19,35 @@ public class Spawner : MonoBehaviour
             spawnedEnemies.Add(Spawn());
         }
     }
-
-    private void OnDestroy()
+    public Enemy Spawn()
     {
+        Enemy enemyToCreate = enemies[Random.Range(0, enemies.Length)];
+        Enemy enemyCreated = Instantiate(enemyToCreate, controller.transform) as Enemy;
+        UnityEngine.Vector3 pos = WhereToSpawn(enemyCreated);
+        enemyCreated.transform.position = pos;
 
+        return enemyCreated;
     }
 
     private UnityEngine.Vector3 WhereToSpawn(Enemy enemy)
     {
-        Transform controllerTransform = controller.transform;
-        float boundryT = controllerTransform.position.y + controllerTransform.localScale.y / 2;
-        float boundryB = controllerTransform.position.y - controllerTransform.localScale.y / 2;
+        Renderer currentBGrenderer = controller.GetComponent<Renderer>();
+        if (currentBGrenderer == null)
+            return new UnityEngine.Vector3(0, 0, 0);
+
+        float boundryT = currentBGrenderer.bounds.max.y;
+        float boundryB = currentBGrenderer.bounds.min.y;
+        float boundryR = currentBGrenderer.bounds.max.x;
+        float boundryL = currentBGrenderer.bounds.min.x;
         float randomY = Random.Range(boundryB, boundryT);
         float randomX = Random.Range(boundryL, boundryR);
 
         if (enemy.spawnPos == SpawnPos.Middle)
             return new UnityEngine.Vector3(randomX, randomY, 0);
+
         else if (enemy.spawnPos == SpawnPos.Side)
         {
-            int chooseSide = Random.Range(0, 1);
+            int chooseSide = Random.Range(0, 2);
 
             return new UnityEngine.Vector3(chooseSide == 0 ? boundryL : boundryR, randomY, 0);
         }

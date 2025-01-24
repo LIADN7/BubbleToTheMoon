@@ -2,11 +2,24 @@ using UnityEngine;
 
 public class BGController : MonoBehaviour
 {
-    private Spawner spawner;
+    private BGCreator bgCreator;
+
     void Start()
     {
-        spawner = GetComponent<Spawner>();
-        
+        bgCreator = BGCreator.inst;
     }
-  
+
+    private void OnTriggerExit2D(Collider2D other)
+    {
+        if (bgCreator == null)
+            return;
+
+        if (other.CompareTag("CameraBottom"))
+            bgCreator.RemovePrev();
+
+        else if (other.CompareTag("CameraTop"))
+            bgCreator.CallCreation();
+    }
+
+
 }
