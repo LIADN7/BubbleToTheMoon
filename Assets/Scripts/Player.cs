@@ -116,7 +116,7 @@ public class Player : MonoBehaviour
         // Handle player win logic here
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            
+            SceneManager.LoadScene("MainGame");
         }
     }
 
@@ -126,7 +126,7 @@ public class Player : MonoBehaviour
         // Handle player loss logic here
         if (Input.GetKeyDown(KeyCode.Space))
         {
-
+            SceneManager.LoadScene("MainGame");
         }
     }
 
