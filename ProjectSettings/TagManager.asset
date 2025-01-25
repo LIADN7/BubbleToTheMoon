@@ -54,5 +54,8 @@ TagManager:
   - name: Players_Enemies
     uniqueID: 1154071503
     locked: 0
+  - name: Bubbles
+    uniqueID: 3812257691
+    locked: 0
   m_RenderingLayers:
   - Default
