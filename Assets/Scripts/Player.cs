@@ -91,7 +91,7 @@ public class Player : MonoBehaviour
     {
         // Constant horizontal movement
         float x = Input.GetKey(rightKey) ? 1 : Input.GetKey(leftKey) ? -1 : 0;
-        float y = currentSpeedY; // Vertical speed based on up/down key presses
+        float y = currentSpeedY + 0.3f; // Vertical speed based on up/down key presses
 
 
 
@@ -133,7 +133,7 @@ public class Player : MonoBehaviour
     protected virtual void HandleUpAndDownChange(int direction)
     {
         currentLevelY += direction;
-        currentSpeedY += (speedStepY * direction) + 0.1f;
+        currentSpeedY += (speedStepY * direction);
 
     }
 

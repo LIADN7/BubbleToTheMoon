@@ -47,7 +47,7 @@ public class AlienEnemy : Enemy
         {
             Trigger();
 
-            SoundManager.inst.PlayOneShot(SoundsNames.AlianIdle, Random.Range(0, 4));
+            // SoundManager.inst.PlayOneShot(SoundsNames, Random.Range(0, 4));
 
         }
         if (isTriggered)

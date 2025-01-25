@@ -97,7 +97,7 @@ public class SoundManager : MonoBehaviour
         else if (i < s.clips.Length)
         {
             s.source.PlayOneShot(s.clips[i]);
-            volume = s.volumes[i];
+            volume = s.volumes[0];
 
         }
 
