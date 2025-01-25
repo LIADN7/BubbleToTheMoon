@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 54f3a87158af0df4b9f8dfcbb782bf80
+guid: 479bb74c395f45b438f1215df5d70e74
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 7095220138868671201
-    second: CloudMedium_0
+      213: 8321266225776136334
+    second: GirlBubble_1_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -126,23 +126,23 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: CloudMedium_0
+      name: GirlBubble_1_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 267
-        height: 213
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 80
+        height: 80
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 1e2077ccf19477260800000000000000
-      internalID: 7095220138868671201
+      spriteID: e8097dc5b831b7370800000000000000
+      internalID: 8321266225776136334
       vertices: []
       indices: 
       edges: []
@@ -151,7 +151,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: d31df7c9a4dcd93428dd13dc79338160
     internalID: 0
     vertices: []
     indices: 
@@ -161,7 +161,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      CloudMedium_0: 7095220138868671201
+      GirlBubble_1_0: 8321266225776136334
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

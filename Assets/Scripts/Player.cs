@@ -12,6 +12,9 @@ public class Player : MonoBehaviour
     [SerializeField] protected KeyCode leftKey;
 
     [SerializeField] protected SpriteRenderer playerSprite;
+    [SerializeField] protected SpriteRenderer bubbleSprite;
+    [SerializeField] protected Collider2D bubbleCollider;
+
     protected GameManager manager;
 
     protected float speedX = 3f; // Constant horizontal speed
@@ -36,16 +39,16 @@ public class Player : MonoBehaviour
             HandleMovement();
             HandleSpeedOnKey();
         }
-
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (IsOutOfScreen())
         {
-            OnPlayerLoss();
+            //manager.ChangeState(GameState.Endgame);
+            //manager.RestartGame();
         }
-        if (Input.GetKeyDown(KeyCode.V))
-        {
-            OnPlayerWin();
-        }
-
+    }
+    private bool IsOutOfScreen()
+    {
+        Vector3 screenPoint = Camera.main.WorldToViewportPoint(transform.position);
+        return screenPoint.x < -0.7f || screenPoint.x > 1.7f || screenPoint.y < -0.7f || screenPoint.y > 1.7f;
     }
 
     /// <summary>
@@ -136,24 +139,5 @@ public class Player : MonoBehaviour
         currentLevelY = -1;
         ApplyHitForce();
     }
-
-    protected virtual void OnPlayerWin()
-    {
-        Debug.Log("Player won the game!");
-        // Handle player win logic here
-
-            SceneManager.LoadScene("MainGame");
-        
-    }
-
-    protected virtual void OnPlayerLoss()
-    {
-        Debug.Log("Player lost the game!");
-        // Handle player loss logic here
-
-            SceneManager.LoadScene("MainGame");
-        
-    }
-
 
 }
