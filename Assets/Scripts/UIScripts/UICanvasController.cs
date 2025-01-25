@@ -1,6 +1,4 @@
 using UnityEngine;
-using UnityEngine.SceneManagement;
-using static GameManager;
 
 public class UICanvasController : MonoBehaviour
 {
@@ -15,20 +13,16 @@ public class UICanvasController : MonoBehaviour
     public void TogglePause()
     {
         isPaused = !isPaused;
-        SoundsNames soundName = isPaused?SoundsNames.PauseButton: SoundsNames.ResumeButton;
+        SoundsNames soundName = isPaused ? SoundsNames.PauseButton : SoundsNames.ResumeButton;
         SoundManager.inst.Play(soundName);
 
         Time.timeScale = isPaused ? 0f : 1f;
     }
 
-    public void RestartGame(string sceneToLoad)
+    public void RestartGame()
     {
-        if (!string.IsNullOrEmpty(sceneToLoad))
-        {
-            SoundManager.inst.Play(SoundsNames.RestartGame);
-            this.manager.ChangeState(GameState.Idle);
-            SceneManager.LoadScene(sceneToLoad);
-        }
+        SoundManager.inst.Play(SoundsNames.RestartGame);
+        this.manager.RestartGame();
     }
 
 }
