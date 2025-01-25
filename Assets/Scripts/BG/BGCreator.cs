@@ -11,7 +11,7 @@ public class BGCreator : MonoBehaviour
     public GameObject[] backgrounds; // Array of background prefabs
     public GameObject[] transitions; // Array of transition prefabs
 
-    private GameObject currentBG, nextBG, prevBG;
+    private GameObject currentBG, nextBG, prevBG, mainsplashBG;
     public static BGCreator inst;
 
     private void Awake()

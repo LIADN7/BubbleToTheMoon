@@ -23,7 +23,11 @@ public class GameManager : MonoBehaviour
     {
         // Ensure only one instance of GameManager exists
         if (inst == null)
+        {
+
             inst = this;
+            RestartGame();
+        }
         else
             Destroy(gameObject);
 
