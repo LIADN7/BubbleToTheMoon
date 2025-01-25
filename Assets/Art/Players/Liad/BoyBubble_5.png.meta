@@ -160,7 +160,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      BoyBubble_5_0: -5778854527572744729
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
