@@ -708,8 +708,8 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.45, y: 1.87}
-    newSize: {x: 1, y: 1}
+    oldSize: {x: 1.52, y: 1.87}
+    newSize: {x: 1.52, y: 1.95}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -1245,6 +1245,38 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2908191316993137805, guid: 22e37420f0d89cd4594a3440a0381f5b, type: 3}
+      propertyPath: backgrounds.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 2908191316993137805, guid: 22e37420f0d89cd4594a3440a0381f5b, type: 3}
+      propertyPath: transitions.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2908191316993137805, guid: 22e37420f0d89cd4594a3440a0381f5b, type: 3}
+      propertyPath: 'backgrounds.Array.data[1]'
+      value: 
+      objectReference: {fileID: 3885651087777658525, guid: 854c10d5fa78ad444bc5a7fa5fcb07d8, type: 3}
+    - target: {fileID: 2908191316993137805, guid: 22e37420f0d89cd4594a3440a0381f5b, type: 3}
+      propertyPath: 'backgrounds.Array.data[2]'
+      value: 
+      objectReference: {fileID: 7869181172766483935, guid: c68677332f3fec742b16a36967fd767a, type: 3}
+    - target: {fileID: 2908191316993137805, guid: 22e37420f0d89cd4594a3440a0381f5b, type: 3}
+      propertyPath: 'backgrounds.Array.data[3]'
+      value: 
+      objectReference: {fileID: 6763899509639159646, guid: 07d994d8b0f672b4ebdbba873d9c88a4, type: 3}
+    - target: {fileID: 2908191316993137805, guid: 22e37420f0d89cd4594a3440a0381f5b, type: 3}
+      propertyPath: 'transitions.Array.data[0]'
+      value: 
+      objectReference: {fileID: 5118926169276190901, guid: 7db6e780e0bdea645b78793b70b07a2b, type: 3}
+    - target: {fileID: 2908191316993137805, guid: 22e37420f0d89cd4594a3440a0381f5b, type: 3}
+      propertyPath: 'transitions.Array.data[1]'
+      value: 
+      objectReference: {fileID: 6995536555125732143, guid: ee9242fe6e309664ba028bc28cfd2e41, type: 3}
+    - target: {fileID: 2908191316993137805, guid: 22e37420f0d89cd4594a3440a0381f5b, type: 3}
+      propertyPath: 'transitions.Array.data[2]'
+      value: 
+      objectReference: {fileID: 2425035302783028262, guid: 1a93778e6f5b31645966afaaab52997a, type: 3}
     - target: {fileID: 3769546548559902248, guid: 22e37420f0d89cd4594a3440a0381f5b, type: 3}
       propertyPath: m_Name
       value: BGCreator
