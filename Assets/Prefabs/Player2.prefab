@@ -32,6 +32,14 @@ PrefabInstance:
       propertyPath: m_Controller
       value: 
       objectReference: {fileID: 9100000, guid: d1e13e417fb58bd448582e7017c15726, type: 2}
+    - target: {fileID: 5573315844293177371, guid: 268338352128cc241a271302d22331b3, type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 5677332148300179148, guid: 268338352128cc241a271302d22331b3, type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
     - target: {fileID: 6441758775093594074, guid: 268338352128cc241a271302d22331b3, type: 3}
       propertyPath: upKey
       value: 106
@@ -199,10 +207,10 @@ MonoBehaviour:
   downKey: 115
   rightKey: 100
   leftKey: 97
-  playerName: Snoty Boy
   playerSpriteRenderer: {fileID: 4067235703198087254}
   bubbleSpriteRenderer: {fileID: 3625756705999210966}
   bubbleCollider: {fileID: 1818320641097953563}
+  PlayerName: Snot Kid
   maxSpeedY: 5
   speedStepY: 1
   isTriggered: 0

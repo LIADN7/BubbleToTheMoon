@@ -8,7 +8,7 @@ public class MoonElement : BGElement
         {
             Debug.Log("Won!");
             manager.ChangeState(GameManager.GameState.Endgame);
-            canvasController.ShowWinner(other.gameObject.GetComponent<Player>().PlayerName);
+            canvasController.ShowWinner(other.gameObject.GetComponent<Player>().PlayerName); ///
         }
     }
 }

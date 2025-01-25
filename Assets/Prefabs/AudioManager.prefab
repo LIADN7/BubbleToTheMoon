@@ -128,7 +128,7 @@ MonoBehaviour:
     Output: {fileID: -5869262110335406333, guid: fab2831f9eb0a46bea31fa432af14303, type: 2}
     volumes: []
     pitch: 1
-    loop: 1
+    loop: 0
     source: {fileID: 0}
   - name: BeesExplotion
     clips:

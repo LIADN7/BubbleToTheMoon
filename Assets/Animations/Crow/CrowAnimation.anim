@@ -95,8 +95,49 @@ AnimationClip:
     m_Center: {x: 0, y: 0, z: 0}
     m_Extent: {x: 0, y: 0, z: 0}
   m_ClipBindingConstant:
-    genericBindings: []
-    pptrCurveMapping: []
+    genericBindings:
+    - serializedVersion: 2
+      path: 0
+      attribute: 0
+      script: {fileID: 0}
+      typeID: 212
+      customType: 23
+      isPPtrCurve: 1
+      isIntCurve: 0
+      isSerializeReferenceCurve: 0
+    pptrCurveMapping:
+    - {fileID: -1005258594430731661, guid: 165e35ab89bdf1848896d0ff04f449be, type: 3}
+    - {fileID: 327491170870612194, guid: ee72db09e921a7d43aefd33dabad705d, type: 3}
+    - {fileID: 4371480935392157352, guid: 0360a997708ca8d4fb177191e898018f, type: 3}
+    - {fileID: -6248735989653041432, guid: bc20f20214d1b7d488966dfb02bfe157, type: 3}
+    - {fileID: -6060557099740080184, guid: eb8d708458896594ea63a1a18e85f590, type: 3}
+    - {fileID: -224439288000135340, guid: 6c8993eaad7cd974d88cbd09d0627ba1, type: 3}
+    - {fileID: 7412134691391600680, guid: 336c7d8b68c41de4287ea999f9011755, type: 3}
+    - {fileID: -3520835059909056556, guid: 0e5526ede1d57be418553a49a04b2ee3, type: 3}
+    - {fileID: 8547473473251513362, guid: 38c080cb3dbbccb49b550ad425974216, type: 3}
+    - {fileID: -8539170001730457322, guid: cd22540de5ffd36448666e876f85df3a, type: 3}
+    - {fileID: 890344802387029081, guid: 7c84fce62e8f0ef4291124a4970ef02a, type: 3}
+    - {fileID: -3738738868428447297, guid: bafd5ac972f2e0b40abeabe25b588ec0, type: 3}
+    - {fileID: -4837496293468813019, guid: 4ce75da78a7192d40adb96d9669ab9f3, type: 3}
+    - {fileID: -4616191089402250572, guid: 529bb665a02b44a4eba02b98827f9851, type: 3}
+    - {fileID: -335074630780606100, guid: 95508713ddab7f44f87bcce5cc7443c6, type: 3}
+    - {fileID: -7689288274691376980, guid: 6cd545a0ea005bb4ca4691f5e32cd3d5, type: 3}
+    - {fileID: -7932922556734376597, guid: b25ab1db29d66684c874921210785785, type: 3}
+    - {fileID: -5563863433962005787, guid: df14b2b9a149e834b94773e88bf5e664, type: 3}
+    - {fileID: 4274509744409398030, guid: a0c57a47bce14b644b48ed91742556fc, type: 3}
+    - {fileID: 910853987925538803, guid: 52a9113f88ae47d46b8965b49d3d9283, type: 3}
+    - {fileID: 8937723670190515311, guid: a266a40e551a89e4da01ecfc0f74f04a, type: 3}
+    - {fileID: 4659511484578169890, guid: c6c9e4cad31efd64ba18621989881ca7, type: 3}
+    - {fileID: -7327403049372307419, guid: 2d9c5c6109c725d4b9fa1e434fa7979b, type: 3}
+    - {fileID: 2183441704018545710, guid: 6e99dbbbdfb7d0749aa9b2bb93eb9a68, type: 3}
+    - {fileID: -2520333016416313924, guid: 8863e56e34d0425418c49be9f044094b, type: 3}
+    - {fileID: 6947872947646322006, guid: 57e2e4410b596504096eaec027ea2cf2, type: 3}
+    - {fileID: 1966347869034866962, guid: 91bab2f48db71fa479ca788eaf017299, type: 3}
+    - {fileID: 1520932676491459062, guid: 52f91661235797e40abf9b9d63e3940b, type: 3}
+    - {fileID: 4997878508157098665, guid: a39f5a278d4a45f409ac864a5f7bda02, type: 3}
+    - {fileID: 2821750005298093277, guid: 38e3f41d454597745908632c048a4805, type: 3}
+    - {fileID: 2012964842606631601, guid: 476be15c381df1d4aafa0212a1bd9b51, type: 3}
+    - {fileID: 2934209529557545392, guid: ed7a1f5e45ea0e2468140e9ef18b89e2, type: 3}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}
@@ -123,7 +164,7 @@ AnimationClip:
   m_HasMotionFloatCurves: 0
   m_Events:
   - time: 0.5
-    functionName: 
+    functionName: CrowAnimSound
     data: 
     objectReferenceParameter: {fileID: 0}
     floatParameter: 0

@@ -79,7 +79,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1154071503
-  m_SortingLayer: 3
+  m_SortingLayer: 4
   m_SortingOrder: 0
   m_Sprite: {fileID: -4017760105307756567, guid: 03996986c0020584687cc5fa3795c200, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -184,7 +184,7 @@ MonoBehaviour:
   playerSpriteRenderer: {fileID: 8795865415382777562}
   bubbleSpriteRenderer: {fileID: 8084470607245348698}
   bubbleCollider: {fileID: 6582979876234966935}
-  PlayerName: 
+  PlayerName: Bubble Gum Girl
   maxSpeedY: 5
   speedStepY: 1
   isTriggered: 0
@@ -212,7 +212,7 @@ GameObject:
   - component: {fileID: 6582979876234966935}
   m_Layer: 0
   m_Name: Bubble
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -273,8 +273,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -482709605
-  m_SortingLayer: 4
+  m_SortingLayerID: -588695925
+  m_SortingLayer: 5
   m_SortingOrder: 0
   m_Sprite: {fileID: 8321266225776136334, guid: 479bb74c395f45b438f1215df5d70e74, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -336,7 +336,7 @@ GameObject:
   - component: {fileID: 4942224330100220544}
   m_Layer: 0
   m_Name: BubbleExp
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -397,8 +397,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -482709605
-  m_SortingLayer: 4
+  m_SortingLayerID: -588695925
+  m_SortingLayer: 5
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: c8acd849007b1ef40adb59aa7d27ded7, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}

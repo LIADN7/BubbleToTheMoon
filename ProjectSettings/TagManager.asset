@@ -51,7 +51,10 @@ TagManager:
   - name: BGelements
     uniqueID: 195632721
     locked: 0
-  - name: Players_Enemies
+  - name: Enemies
+    uniqueID: 3509212799
+    locked: 0
+  - name: Players
     uniqueID: 1154071503
     locked: 0
   - name: Bubbles
