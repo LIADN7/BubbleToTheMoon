@@ -2,9 +2,10 @@ using UnityEngine;
 
 public class BGCreator : MonoBehaviour
 {
-    private int level; // Current game level
-    private int controllerPerLevelAmount = 4;
-    private int controllerPerLevelCounter = 4;
+    public int level; // Current game level
+    public int FINAL_LEVEL = 3;
+    public int controllerPerLevelAmount = 4;
+    private int controllerPerLevelCounter;
 
     public GameObject[] backgrounds; // Array of background prefabs
     public GameObject[] transitions; // Array of background prefabs
@@ -14,7 +15,6 @@ public class BGCreator : MonoBehaviour
 
     private void Awake()
     {
-        // Ensure only one instance of GameManager exists
         if (inst == null)
         {
             inst = this;
@@ -24,11 +24,23 @@ public class BGCreator : MonoBehaviour
             Destroy(gameObject);
         }
 
-        // Optionally make the GameManager persist across scenes
         DontDestroyOnLoad(gameObject);
     }
+
+    private void ResetParams()
+    {
+        level = 0;
+        controllerPerLevelCounter = controllerPerLevelAmount;
+        prevBG = null;
+        currentBG = null;
+        nextBG = null;
+    }
+
     private void Start()
     {
+        ResetParams();
+
+        controllerPerLevelCounter = controllerPerLevelAmount;
         currentBG = FindFirstObjectByType<BGController>().gameObject;
         CreateNext(backgrounds[level]);
     }
@@ -36,6 +48,11 @@ public class BGCreator : MonoBehaviour
     {
         prevBG = currentBG;
         currentBG = nextBG;
+        if (level == FINAL_LEVEL)
+        {
+            CreateNext(backgrounds[level]);
+            return;
+        }
         if (controllerPerLevelCounter == 0)
         {
             controllerPerLevelCounter = controllerPerLevelAmount;
@@ -57,7 +74,7 @@ public class BGCreator : MonoBehaviour
 
         Vector3 topPosition = new Vector3(0, (currentBGrenderer.bounds.max.y - currentBG.transform.position.y) * 2, 0);
 
-        nextBG = Instantiate(obj, currentBG.transform.position + topPosition, Quaternion.identity);
+        nextBG = Instantiate(obj, currentBG.transform.position + topPosition, Quaternion.identity, this.transform);
     }
     public void RemovePrev()
     {

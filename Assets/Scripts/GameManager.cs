@@ -10,7 +10,7 @@ public class GameManager : MonoBehaviour
         Idle,
         Play,
         Endgame,
-        
+
     }
 
     // Static instance for global access
@@ -37,6 +37,10 @@ public class GameManager : MonoBehaviour
     {
         currentState = newState;
         Debug.Log($"Game state changed to: {currentState}");
+        if (currentState == GameState.Endgame)
+        {
+            TriggerRestartGame(3);
+        }
     }
 
     public bool IsState(GameState state)
@@ -44,11 +48,10 @@ public class GameManager : MonoBehaviour
         return currentState == state;
     }
 
-    public void RestartGame()
+    public void TriggerRestartGame(int secondsBeforeRestart)
     {
-        StartCoroutine(Countdown(2));
-        SceneManager.LoadScene(SceneManager.GetActiveScene().name); ;
-        ChangeState(GameState.Idle);
+        StartCoroutine(Countdown(secondsBeforeRestart));
+
     }
 
 
@@ -60,6 +63,15 @@ public class GameManager : MonoBehaviour
             yield return new WaitForSeconds(1f);
             currentTime--;
         }
-        yield return new WaitForSeconds(1f);
+        RestartGame();
     }
+
+    private void RestartGame()
+    {
+        ChangeState(GameState.Idle);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name); ;
+
+    }
+
+
 }

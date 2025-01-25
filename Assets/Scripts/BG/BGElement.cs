@@ -3,6 +3,15 @@ using UnityEngine;
 public class BGElement : MonoBehaviour
 {
     private float speed = 5f;
+    protected GameManager manager;
+    protected UICanvasController canvasController;
+
+
+    private void Start()
+    {
+        manager = GameManager.inst;
+        canvasController = FindFirstObjectByType<UICanvasController>();
+    }
 
     // Update is called once per frame
     void Update()

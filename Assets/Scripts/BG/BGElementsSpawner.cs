@@ -3,16 +3,19 @@ using UnityEngine;
 public class BGElementsSpawner : MonoBehaviour
 {
 
-    [SerializeField] int level;
     [SerializeField] int spawnCount;
     [SerializeField] BGElement[] elements;
 
     BGController controller;
+    BGCreator creator;
 
 
     private void Start()
     {
         controller = GetComponentInParent<BGController>();
+        creator = BGCreator.inst;
+        if (elements.Length == 0)
+            return;
         for (int i = 0; i < spawnCount; i++)
         {
             Spawn();
@@ -30,6 +33,7 @@ public class BGElementsSpawner : MonoBehaviour
 
     private Vector3 WhereToSpawn()
     {
+
         Renderer currentBGrenderer = controller.GetComponent<Renderer>();
         if (currentBGrenderer == null)
             return new Vector3(0, 0, 0);
@@ -40,7 +44,10 @@ public class BGElementsSpawner : MonoBehaviour
         float boundryL = currentBGrenderer.bounds.min.x;
         float randomY = Random.Range(boundryB, boundryT);
         float randomX = Random.Range(boundryL, boundryR);
-
+        if (creator.level == creator.FINAL_LEVEL)
+        {
+            return new Vector3(currentBGrenderer.transform.position.x, currentBGrenderer.transform.position.y, 0);
+        }
         return new Vector3(randomX, randomY, 0);
 
     }
