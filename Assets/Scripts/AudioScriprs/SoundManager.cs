@@ -9,11 +9,10 @@ using UnityEngine.UIElements;
         public String name;
         public AudioClip[] clips;
         public AudioMixerGroup Output; 
-        [Range(0f, 1f)] public float volume = 1f;
+        [Range(0f, 1f)] public float[] volumes;
         [Range(0f, 3f)] public float pitch = 1f;
         public bool loop; 
         [HideInInspector] public AudioSource source;
-
 
     }
 
@@ -45,7 +44,7 @@ public class SoundManager : MonoBehaviour
 
             s.source = gameObject.AddComponent<AudioSource>();
             s.source.clip = s.clips[0];
-            s.source.volume = s.volume;
+           // s.source.volume = s.volumes[0];
             s.source.pitch = s.pitch;
             s.source.loop = s.loop;
             s.source.outputAudioMixerGroup = s.Output;
@@ -78,6 +77,7 @@ public class SoundManager : MonoBehaviour
     public void PlayOneShot(SoundsNames name, int i)
     {
         Sound s = System.Array.Find(sounds, sound => sound.name == name.ToString());
+        float volume = 0;
         if (s == null)
         {
             Debug.LogWarning($"Sound: {name} not found!");
@@ -85,18 +85,34 @@ public class SoundManager : MonoBehaviour
         }
         if(i<0) {
             s.source.PlayOneShot(s.clips[0]);
+         volume = s.volumes[0];  
+
         }
         else if (i<s.clips.Length)
         {
             s.source.PlayOneShot(s.clips[i]);
+        volume = s.volumes[i];  
+
         }
 
     }
+    public void StopAllSounds()
+{
+    foreach (Sound s in sounds)
+    {
+        if (s.source != null && s.source.isPlaying)
+        {
+            s.source.Stop();
+        }
+    }
+    Debug.Log("All sounds stopped.");
+}
+
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        
+        StopAllSounds();
     }
 
     // Update is called once per frame
