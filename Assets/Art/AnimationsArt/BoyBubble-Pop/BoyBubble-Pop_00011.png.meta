@@ -1,0 +1,1001 @@
+fileFormatVersion: 2
+guid: ad80e6c27173951458377e846c7390c4
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -6503258285300007201
+    second: BoyBubble-Pop_00011_0
+  - first:
+      213: -835740484953156592
+    second: BoyBubble-Pop_00011_1
+  - first:
+      213: -4549460748386317470
+    second: BoyBubble-Pop_00011_2
+  - first:
+      213: -6248031219161468803
+    second: BoyBubble-Pop_00011_3
+  - first:
+      213: -8512541020051715506
+    second: BoyBubble-Pop_00011_4
+  - first:
+      213: 1331974848116993653
+    second: BoyBubble-Pop_00011_5
+  - first:
+      213: -7942490303337956984
+    second: BoyBubble-Pop_00011_6
+  - first:
+      213: 3860681433153195025
+    second: BoyBubble-Pop_00011_7
+  - first:
+      213: 8143997160688663664
+    second: BoyBubble-Pop_00011_8
+  - first:
+      213: 7225677158501923529
+    second: BoyBubble-Pop_00011_9
+  - first:
+      213: -3137162165604695725
+    second: BoyBubble-Pop_00011_10
+  - first:
+      213: -8514796595846189168
+    second: BoyBubble-Pop_00011_11
+  - first:
+      213: 4550769470121093430
+    second: BoyBubble-Pop_00011_12
+  - first:
+      213: -4773210608241658205
+    second: BoyBubble-Pop_00011_13
+  - first:
+      213: -4437660372704900476
+    second: BoyBubble-Pop_00011_14
+  - first:
+      213: -4424677745714044002
+    second: BoyBubble-Pop_00011_15
+  - first:
+      213: -6548518561131035139
+    second: BoyBubble-Pop_00011_16
+  - first:
+      213: -687157654147795376
+    second: BoyBubble-Pop_00011_17
+  - first:
+      213: -6717141843747300010
+    second: BoyBubble-Pop_00011_18
+  - first:
+      213: -155015520235166336
+    second: BoyBubble-Pop_00011_19
+  - first:
+      213: 4711224173058843838
+    second: BoyBubble-Pop_00011_20
+  - first:
+      213: -4907398669454801490
+    second: BoyBubble-Pop_00011_21
+  - first:
+      213: 4223431266909646349
+    second: BoyBubble-Pop_00011_22
+  - first:
+      213: -6150732160399887020
+    second: BoyBubble-Pop_00011_23
+  - first:
+      213: 3107403543990115543
+    second: BoyBubble-Pop_00011_24
+  - first:
+      213: -1281785438741720010
+    second: BoyBubble-Pop_00011_25
+  - first:
+      213: -5883732089158703625
+    second: BoyBubble-Pop_00011_26
+  - first:
+      213: -7918971607402797522
+    second: BoyBubble-Pop_00011_27
+  - first:
+      213: 4098850145066444835
+    second: BoyBubble-Pop_00011_28
+  - first:
+      213: 698511602308857601
+    second: BoyBubble-Pop_00011_29
+  - first:
+      213: -7610152380515033297
+    second: BoyBubble-Pop_00011_30
+  - first:
+      213: -4942000806361551220
+    second: BoyBubble-Pop_00011_31
+  - first:
+      213: 2068690410530421813
+    second: BoyBubble-Pop_00011_32
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: BoyBubble-Pop_00011_0
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 110
+        width: 54
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fdeb3169b09cfb5a0800000000000000
+      internalID: -6503258285300007201
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoyBubble-Pop_00011_1
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 104
+        width: 18
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 01454f5f47ad664f0800000000000000
+      internalID: -835740484953156592
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoyBubble-Pop_00011_2
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 126
+        width: 12
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 26bc9dcad811dd0c0800000000000000
+      internalID: -4549460748386317470
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoyBubble-Pop_00011_3
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 106
+        width: 44
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d70745ca5b88a49a0800000000000000
+      internalID: -6248031219161468803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoyBubble-Pop_00011_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 90
+        width: 8
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e4a40eb2b016dd980800000000000000
+      internalID: -8512541020051715506
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoyBubble-Pop_00011_5
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 94
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 57ea4c731102c7210800000000000000
+      internalID: 1331974848116993653
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoyBubble-Pop_00011_6
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 104
+        width: 10
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8897e85762b96c190800000000000000
+      internalID: -7942490303337956984
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoyBubble-Pop_00011_7
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 104
+        width: 8
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 11cca060f45e39530800000000000000
+      internalID: 3860681433153195025
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoyBubble-Pop_00011_8
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 90
+        width: 14
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 07c33a6d44a450170800000000000000
+      internalID: 8143997160688663664
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoyBubble-Pop_00011_9
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 90
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9ca3926a713c64460800000000000000
+      internalID: 7225677158501923529
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoyBubble-Pop_00011_10
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 90
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 351465cb1af8674d0800000000000000
+      internalID: -3137162165604695725
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoyBubble-Pop_00011_11
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 90
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 09fe1e10c9d55d980800000000000000
+      internalID: -8514796595846189168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoyBubble-Pop_00011_12
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 92
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 639a249d8b4972f30800000000000000
+      internalID: 4550769470121093430
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoyBubble-Pop_00011_13
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 82
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3a631a9cd3622cdb0800000000000000
+      internalID: -4773210608241658205
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoyBubble-Pop_00011_14
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 74
+        width: 10
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 48ac81b17634a62c0800000000000000
+      internalID: -4437660372704900476
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoyBubble-Pop_00011_15
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 80
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e93632188036892c0800000000000000
+      internalID: -4424677745714044002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoyBubble-Pop_00011_16
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 76
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: df58bbe601dfe15a0800000000000000
+      internalID: -6548518561131035139
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoyBubble-Pop_00011_17
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 84
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 05674d711c9b676f0800000000000000
+      internalID: -687157654147795376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoyBubble-Pop_00011_18
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 66
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 65d9781051be7c2a0800000000000000
+      internalID: -6717141843747300010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoyBubble-Pop_00011_19
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 72
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 085e5b5a43649ddf0800000000000000
+      internalID: -155015520235166336
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoyBubble-Pop_00011_20
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 62
+        width: 12
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eb4e76c9c61a16140800000000000000
+      internalID: 4711224173058843838
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoyBubble-Pop_00011_21
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 62
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ea50cef19ea65ebb0800000000000000
+      internalID: -4907398669454801490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoyBubble-Pop_00011_22
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 56
+        width: 6
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d0e6d6d4c54ac9a30800000000000000
+      internalID: 4223431266909646349
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoyBubble-Pop_00011_23
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 62
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4553bc620b534aaa0800000000000000
+      internalID: -6150732160399887020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoyBubble-Pop_00011_24
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 30
+        width: 17
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7dc125d3f07bf1b20800000000000000
+      internalID: 3107403543990115543
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoyBubble-Pop_00011_25
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 12
+        width: 12
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 63418854fee263ee0800000000000000
+      internalID: -1281785438741720010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoyBubble-Pop_00011_26
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 42
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7f5e02896d8c85ea0800000000000000
+      internalID: -5883732089158703625
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoyBubble-Pop_00011_27
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 42
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e262a5297492a1290800000000000000
+      internalID: -7918971607402797522
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoyBubble-Pop_00011_28
+      rect:
+        serializedVersion: 2
+        x: 94
+        y: 40
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3286e348d7a02e830800000000000000
+      internalID: 4098850145066444835
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoyBubble-Pop_00011_29
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 24
+        width: 10
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 10fbb17f99c91b900800000000000000
+      internalID: 698511602308857601
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoyBubble-Pop_00011_30
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 12
+        width: 26
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f2fdec0fabe436690800000000000000
+      internalID: -7610152380515033297
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoyBubble-Pop_00011_31
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 0
+        width: 28
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c8e2021537c7a6bb0800000000000000
+      internalID: -4942000806361551220
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoyBubble-Pop_00011_32
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 0
+        width: 40
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 53c3cedc7f675bc10800000000000000
+      internalID: 2068690410530421813
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      BoyBubble-Pop_00011_0: -6503258285300007201
+      BoyBubble-Pop_00011_1: -835740484953156592
+      BoyBubble-Pop_00011_10: -3137162165604695725
+      BoyBubble-Pop_00011_11: -8514796595846189168
+      BoyBubble-Pop_00011_12: 4550769470121093430
+      BoyBubble-Pop_00011_13: -4773210608241658205
+      BoyBubble-Pop_00011_14: -4437660372704900476
+      BoyBubble-Pop_00011_15: -4424677745714044002
+      BoyBubble-Pop_00011_16: -6548518561131035139
+      BoyBubble-Pop_00011_17: -687157654147795376
+      BoyBubble-Pop_00011_18: -6717141843747300010
+      BoyBubble-Pop_00011_19: -155015520235166336
+      BoyBubble-Pop_00011_2: -4549460748386317470
+      BoyBubble-Pop_00011_20: 4711224173058843838
+      BoyBubble-Pop_00011_21: -4907398669454801490
+      BoyBubble-Pop_00011_22: 4223431266909646349
+      BoyBubble-Pop_00011_23: -6150732160399887020
+      BoyBubble-Pop_00011_24: 3107403543990115543
+      BoyBubble-Pop_00011_25: -1281785438741720010
+      BoyBubble-Pop_00011_26: -5883732089158703625
+      BoyBubble-Pop_00011_27: -7918971607402797522
+      BoyBubble-Pop_00011_28: 4098850145066444835
+      BoyBubble-Pop_00011_29: 698511602308857601
+      BoyBubble-Pop_00011_3: -6248031219161468803
+      BoyBubble-Pop_00011_30: -7610152380515033297
+      BoyBubble-Pop_00011_31: -4942000806361551220
+      BoyBubble-Pop_00011_32: 2068690410530421813
+      BoyBubble-Pop_00011_4: -8512541020051715506
+      BoyBubble-Pop_00011_5: 1331974848116993653
+      BoyBubble-Pop_00011_6: -7942490303337956984
+      BoyBubble-Pop_00011_7: 3860681433153195025
+      BoyBubble-Pop_00011_8: 8143997160688663664
+      BoyBubble-Pop_00011_9: 7225677158501923529
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

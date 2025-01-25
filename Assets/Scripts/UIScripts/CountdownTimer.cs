@@ -6,7 +6,7 @@ using static GameManager;
 public class CountdownTimer : MonoBehaviour
 {
     TextMeshProUGUI countdownText;
-    [SerializeField] float countdownTime = 3f;
+    [SerializeField] float countdownTime = 0f;
     private GameManager manager;
 
     private void Awake()
