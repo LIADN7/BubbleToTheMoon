@@ -101,7 +101,7 @@ AudioMixerGroupController:
   m_Effects:
   - {fileID: 874030199911677267}
   m_UserColorIndex: 0
-  m_Mute: 0
+  m_Mute: 1
   m_Solo: 0
   m_BypassEffects: 0
 --- !u!243 &-344685320796238877
@@ -155,7 +155,7 @@ AudioMixerController:
     - 3d31941efbbab4bd4b12c44cb1c07920
     - 887eebdc0c29947bfa4eaabc3b8689b0
     name: SFX
-  m_CurrentViewIndex: 1
+  m_CurrentViewIndex: 0
   m_TargetSnapshot: {fileID: 24500006}
 --- !u!243 &24300002
 AudioMixerGroupController:

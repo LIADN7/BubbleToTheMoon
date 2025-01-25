@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 0f8f4dede11e7c64b9a08bc768a5c7ef
+guid: 15e4262b46f0aa14d942a154c2dd1ab8
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -4551802958883581494
-    second: PolinaIdle_0
+      213: 3071767451640751623
+    second: GirlBubble_2_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -126,23 +126,23 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: PolinaIdle_0
+      name: GirlBubble_2_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 145
-        height: 187
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 98
+        height: 104
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: ac11c2c435fb4d0c0800000000000000
-      internalID: -4551802958883581494
+      spriteID: 70667abe83c11aa20800000000000000
+      internalID: 3071767451640751623
       vertices: []
       indices: 
       edges: []
@@ -151,7 +151,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 4c0c98ac86def764da046d84a2f4b013
     internalID: 0
     vertices: []
     indices: 
@@ -161,7 +161,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      PolinaIdle_0: -4551802958883581494
+      GirlBubble_2_0: 3071767451640751623
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
