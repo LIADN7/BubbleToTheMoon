@@ -10,5 +10,9 @@ public class MoonElement : BGElement
             manager.ChangeState(GameManager.GameState.Endgame);
             canvasController.ShowWinner(other.gameObject.GetComponent<Player>().PlayerName); ///
         }
+        if (other.gameObject.CompareTag("CameraTop"))
+        {
+            SoundManager.inst.Play(SoundsNames.MoonAnimation);
+        }
     }
 }

@@ -90,13 +90,13 @@ public class SoundManager : MonoBehaviour
         }
         if(i<0) {
             s.source.PlayOneShot(s.clips[0]);
-         volume = s.volumes[0];  
+            volume = s.volumes[0];  
 
         }
         else if (i<s.clips.Length)
         {
             s.source.PlayOneShot(s.clips[i]);
-        volume = s.volumes[i];  
+            volume = s.volumes[i];  
 
         }
 
@@ -179,5 +179,6 @@ RestartGame,
 StartGameButton,
 BirdAnimation,
 MoonAnimation,
+    AlianIdle,
 
 }
