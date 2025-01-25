@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using System.Xml.Serialization;
 using UnityEngine;
+using static GameManager;
 
 public class CameraFollow : MonoBehaviour
 {
@@ -9,9 +10,10 @@ public class CameraFollow : MonoBehaviour
     [SerializeField] private float offsetY = 2f; // Offset above the highest player's Y position
 
     private float currentCameraY; // To track the camera's current Y position
-
+    private GameManager manager;
     private void Start()
     {
+        manager = GameManager.inst;
         SoundManager.inst.Play(SoundsNames.MainMenuMusic);
         FindAllPlayers();
 
@@ -28,6 +30,9 @@ public class CameraFollow : MonoBehaviour
     }
     private void LateUpdate()
     {
+        if (manager.IsState(GameState.Play))
+        {
+
         if (playerTransforms == null || playerTransforms.Count == 0) return;
 
         // Find the highest Y position among the players
@@ -53,5 +58,6 @@ public class CameraFollow : MonoBehaviour
         // Update the camera's position: only adjust Y, keep X and Z constant
         Vector3 newCameraPosition = new Vector3(transform.position.x, currentCameraY, transform.position.z);
         transform.position = newCameraPosition;
+        }
     }
 }

@@ -125,10 +125,17 @@ MonoBehaviour:
   - name: BeesIdle
     clips:
     - {fileID: 8300000, guid: 818fece1c27224488b7107203a388361, type: 3}
+    - {fileID: 8300000, guid: 818fece1c27224488b7107203a388361, type: 3}
+    - {fileID: 8300000, guid: 818fece1c27224488b7107203a388361, type: 3}
+    - {fileID: 8300000, guid: 818fece1c27224488b7107203a388361, type: 3}
     Output: {fileID: -5869262110335406333, guid: fab2831f9eb0a46bea31fa432af14303, type: 2}
-    volumes: []
+    volumes:
+    - 1
+    - 1
+    - 1
+    - 1
     pitch: 1
-    loop: 1
+    loop: 0
     source: {fileID: 0}
   - name: BeesExplotion
     clips:
@@ -229,3 +236,6 @@ MonoBehaviour:
     pitch: 1
     loop: 0
     source: {fileID: 0}
+  audioMixer: {fileID: 24100000, guid: fab2831f9eb0a46bea31fa432af14303, type: 2}
+  pauseSnapshotName: PauseMenu
+  normalSnapshotName: Normal

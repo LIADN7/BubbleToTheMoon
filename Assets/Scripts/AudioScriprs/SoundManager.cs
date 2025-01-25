@@ -19,6 +19,8 @@ public class SoundManager : MonoBehaviour
 {
     public static SoundManager inst;
     public Sound[] sounds;
+    private bool isMuted = false; // Tracks mute state
+
     private void Awake()
     {
         
@@ -100,16 +102,16 @@ public class SoundManager : MonoBehaviour
 
     }
     public void StopAllSounds()
-{
-    foreach (Sound s in sounds)
     {
-        if (s.source != null && s.source.isPlaying)
+        foreach (Sound s in sounds)
         {
-            s.source.Stop();
+            if (s.source != null && s.source.isPlaying)
+            {
+                s.source.Stop();
+            }
         }
+        Debug.Log("All sounds stopped.");
     }
-    Debug.Log("All sounds stopped.");
-}
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -122,6 +124,35 @@ public class SoundManager : MonoBehaviour
     {
         
     }
+
+    // Mute all sounds
+    public void Mute()
+    {
+        isMuted = true;
+        foreach (Sound s in sounds)
+        {
+            if (s.source != null)
+            {
+                s.source.mute = true;
+            }
+        }
+        Debug.Log("All sounds muted.");
+    }
+
+    // Unmute all sounds
+    public void Unmute()
+    {
+        isMuted = false;
+        foreach (Sound s in sounds)
+        {
+            if (s.source != null)
+            {
+                s.source.mute = false;
+            }
+        }
+        Debug.Log("All sounds unmuted.");
+    }
+
 }
 public enum SoundsNames 
 {
