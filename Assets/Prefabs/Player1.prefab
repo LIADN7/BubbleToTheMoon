@@ -77,8 +77,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 1154071503
+  m_SortingLayer: 3
   m_SortingOrder: 0
   m_Sprite: {fileID: -7510146801946950407, guid: 2b9a279002ef86b44a7ceea0f1978a30, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -183,6 +183,7 @@ MonoBehaviour:
   playerSprite: {fileID: 8795865415382777562}
   bubbleSprite: {fileID: 8084470607245348698}
   bubbleCollider: {fileID: 6582979876234966935}
+  PlayerName: 
   maxSpeedY: 5
   speedStepY: 1
   isTriggered: 0

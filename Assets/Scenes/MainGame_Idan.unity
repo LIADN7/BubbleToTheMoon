@@ -556,7 +556,7 @@ MonoBehaviour:
   m_Intensity: 1
   m_LightVolumeIntensity: 1
   m_LightVolumeEnabled: 0
-  m_ApplyToSortingLayers: 00000000
+  m_ApplyToSortingLayers: 000000000db640dd511ea90bcfbbc944
   m_LightCookieSprite: {fileID: 0}
   m_DeprecatedPointLightCookieSprite: {fileID: 0}
   m_LightOrder: 0
@@ -1246,12 +1246,20 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2908191316993137805, guid: 22e37420f0d89cd4594a3440a0381f5b, type: 3}
-      propertyPath: backgrounds.Array.size
+      propertyPath: FINAL_LEVEL
       value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 2908191316993137805, guid: 22e37420f0d89cd4594a3440a0381f5b, type: 3}
+      propertyPath: backgrounds.Array.size
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2908191316993137805, guid: 22e37420f0d89cd4594a3440a0381f5b, type: 3}
       propertyPath: transitions.Array.size
-      value: 3
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 2908191316993137805, guid: 22e37420f0d89cd4594a3440a0381f5b, type: 3}
+      propertyPath: controllerPerLevelAmount
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 2908191316993137805, guid: 22e37420f0d89cd4594a3440a0381f5b, type: 3}
       propertyPath: 'backgrounds.Array.data[1]'
@@ -1266,6 +1274,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 6763899509639159646, guid: 07d994d8b0f672b4ebdbba873d9c88a4, type: 3}
     - target: {fileID: 2908191316993137805, guid: 22e37420f0d89cd4594a3440a0381f5b, type: 3}
+      propertyPath: 'backgrounds.Array.data[4]'
+      value: 
+      objectReference: {fileID: 8541672990071055867, guid: 2556ad14ae82efb4ab02074412ee8a89, type: 3}
+    - target: {fileID: 2908191316993137805, guid: 22e37420f0d89cd4594a3440a0381f5b, type: 3}
       propertyPath: 'transitions.Array.data[0]'
       value: 
       objectReference: {fileID: 5118926169276190901, guid: 7db6e780e0bdea645b78793b70b07a2b, type: 3}
@@ -1277,6 +1289,10 @@ PrefabInstance:
       propertyPath: 'transitions.Array.data[2]'
       value: 
       objectReference: {fileID: 2425035302783028262, guid: 1a93778e6f5b31645966afaaab52997a, type: 3}
+    - target: {fileID: 2908191316993137805, guid: 22e37420f0d89cd4594a3440a0381f5b, type: 3}
+      propertyPath: 'transitions.Array.data[3]'
+      value: 
+      objectReference: {fileID: 6763899509639159646, guid: 07d994d8b0f672b4ebdbba873d9c88a4, type: 3}
     - target: {fileID: 3769546548559902248, guid: 22e37420f0d89cd4594a3440a0381f5b, type: 3}
       propertyPath: m_Name
       value: BGCreator

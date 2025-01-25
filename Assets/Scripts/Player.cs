@@ -11,11 +11,15 @@ public class Player : MonoBehaviour
     [SerializeField] protected KeyCode rightKey;
     [SerializeField] protected KeyCode leftKey;
 
-    [SerializeField] protected SpriteRenderer playerSprite;
-    [SerializeField] protected SpriteRenderer bubbleSprite;
-    [SerializeField] protected Collider2D bubbleCollider;
+    [SerializeField] protected SpriteRenderer playerSpriteRenderer;
+
+    [SerializeField] protected SpriteRenderer bubbleSpriteRenderer;
+
+    [SerializeField] protected CircleCollider2D bubbleCollider;
+    [SerializeField] public string PlayerName;
 
     protected GameManager manager;
+    protected UICanvasController canvasController;
 
     protected float speedX = 3f; // Constant horizontal speed
     [SerializeField] protected float maxSpeedY = 5f; // Maximum vertical speed
@@ -29,20 +33,26 @@ public class Player : MonoBehaviour
     void Start()
     {
         this.manager = GameManager.inst;
+        canvasController = FindFirstObjectByType<UICanvasController>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (this.manager.CurrentState== GameState.Play)
+        if (this.manager.CurrentState == GameState.Play)
         {
             HandleMovement();
             HandleSpeedOnKey();
-        }
-        if (IsOutOfScreen())
-        {
-            manager.ChangeState(GameState.Endgame);
-            manager.RestartGame();
+            if (IsOutOfScreen())
+            {
+                int playersPlaying = FindObjectsByType<Player>(FindObjectsInactive.Exclude, FindObjectsSortMode.None).Length;
+                if (playersPlaying == 2)
+                {
+                    manager.ChangeState(GameState.Endgame);
+                    canvasController.ShowWinner(other.gameObject.GetComponent<Player>().PlayerName);
+                }
+                Destroy(this.gameObject);
+            }
         }
     }
     private bool IsOutOfScreen()
@@ -50,6 +60,7 @@ public class Player : MonoBehaviour
         Vector3 screenPoint = Camera.main.WorldToViewportPoint(transform.position);
         return screenPoint.x < -0.7f || screenPoint.x > 1.7f || screenPoint.y < -0.7f || screenPoint.y > 1.7f;
     }
+
 
     /// <summary>
     /// Applies a downward force when the player is hit.
@@ -62,8 +73,8 @@ public class Player : MonoBehaviour
     IEnumerator HitForceCountDown(float timerPowerUp)
     {
 
-            isHit = true;
-                yield return new WaitForSeconds(timerPowerUp);
+        isHit = true;
+        yield return new WaitForSeconds(timerPowerUp);
         isHit = false;
 
 
@@ -78,9 +89,7 @@ public class Player : MonoBehaviour
         float x = Input.GetKey(rightKey) ? 1 : Input.GetKey(leftKey) ? -1 : 0;
         float y = currentSpeedY; // Vertical speed based on up/down key presses
 
-        // Flip the sprite based on horizontal direction
-        if (x < 0) playerSprite.flipX = true;
-        if (x > 0) playerSprite.flipX = false;
+
 
         // Apply movement
         Vector3 movement = new Vector3(x * speedX, y, 0) * Time.deltaTime;
@@ -102,7 +111,7 @@ public class Player : MonoBehaviour
                 //currentSpeedY += speedStepY;
                 HandleUpAndDownChange(1);
             }
-            if(Input.GetKeyDown(upKey) && currentSpeedY >= maxSpeedY)
+            if (Input.GetKeyDown(upKey) && currentSpeedY >= maxSpeedY)
             {
                 OnPlayerHit();
             }
@@ -119,9 +128,9 @@ public class Player : MonoBehaviour
 
     protected virtual void HandleUpAndDownChange(int direction)
     {
-                currentLevelY+= direction;
-                currentSpeedY += speedStepY* direction;
-           
+        currentLevelY += direction;
+        currentSpeedY += speedStepY * direction;
+
     }
 
     protected virtual void OnTriggerEnter2D(Collider2D other)

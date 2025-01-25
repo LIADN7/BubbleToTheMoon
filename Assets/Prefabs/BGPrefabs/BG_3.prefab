@@ -12,6 +12,14 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 4527470027961095755, guid: 9ae0a49fef4d60d43809697357afabbe, type: 3}
+    - target: {fileID: 3392250759884104155, guid: 8a7eff7b1b55a7449addef4e2052d2cb, type: 3}
+      propertyPath: m_SortingLayerID
+      value: -582961651
+      objectReference: {fileID: 0}
+    - target: {fileID: 4044397454452434541, guid: 8a7eff7b1b55a7449addef4e2052d2cb, type: 3}
+      propertyPath: spawnCount
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 4044397454452434541, guid: 8a7eff7b1b55a7449addef4e2052d2cb, type: 3}
       propertyPath: elements.Array.size
       value: 0
@@ -19,7 +27,7 @@ PrefabInstance:
     - target: {fileID: 4044397454452434541, guid: 8a7eff7b1b55a7449addef4e2052d2cb, type: 3}
       propertyPath: 'elements.Array.data[0]'
       value: 
-      objectReference: {fileID: 4757688438646286543, guid: 1fac28840bd0b6d41a51b3e08e012a9b, type: 3}
+      objectReference: {fileID: 0}
     - target: {fileID: 4044397454452434541, guid: 8a7eff7b1b55a7449addef4e2052d2cb, type: 3}
       propertyPath: 'elements.Array.data[1]'
       value: 

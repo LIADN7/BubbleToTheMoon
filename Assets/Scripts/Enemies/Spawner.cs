@@ -3,7 +3,6 @@ using UnityEngine;
 
 public class Spawner : MonoBehaviour
 {
-    [SerializeField] int level;
     [SerializeField] int spawnCount;
     [SerializeField] Enemy[] enemies;
     HashSet<Enemy> spawnedEnemies { get; set; } = new HashSet<Enemy>();
@@ -13,6 +12,8 @@ public class Spawner : MonoBehaviour
     private void Start()
     {
         controller = GetComponentInParent<BGController>();
+        if (enemies.Length == 0)
+            return;
         for (int i = 0; i < spawnCount; i++)
         {
             spawnedEnemies.Add(Spawn());
