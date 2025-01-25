@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 
 public class BirdEnemy : Enemy
@@ -22,7 +23,6 @@ public class BirdEnemy : Enemy
     protected override void Move()
     {
         transform.position += (rightSide ? -1 : 1) * Vector3.right * speed * Time.deltaTime;
-
         if (IsOutOfScreen())
             Destroy(gameObject);
     }
@@ -42,7 +42,18 @@ public class BirdEnemy : Enemy
         {
             Trigger();
         }
+        if (isTriggered)
+        {
+            StartCoroutine(StartSoundAfter(Random.Range(0.5f, 0.8f)));
+
+        }
         Die(other);
+    }
+
+    IEnumerator StartSoundAfter(float sec)
+    {
+        yield return new WaitForSeconds(sec);
+        SoundManager.inst.Play(SoundsNames.BirdIdle);
     }
 
 }
