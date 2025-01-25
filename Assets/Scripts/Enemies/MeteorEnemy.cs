@@ -32,6 +32,8 @@ public class MeteorEnemy : Enemy
         if (other.gameObject.CompareTag("CameraTop"))
         {
             Trigger();
+            SoundManager.inst.PlayOneShot(SoundsNames.AstroidIdle, Random.Range(0, 4));
+
         }
         if (isTriggered)
         {

@@ -131,9 +131,6 @@ MonoBehaviour:
     Output: {fileID: -5869262110335406333, guid: fab2831f9eb0a46bea31fa432af14303, type: 2}
     volumes:
     - 1
-    - 1
-    - 1
-    - 1
     pitch: 1
     loop: 0
     source: {fileID: 0}
@@ -236,7 +233,16 @@ MonoBehaviour:
     pitch: 1
     loop: 0
     source: {fileID: 0}
-  - name: AlianIdle
+  - name: MoonAnimation
+    clips:
+    - {fileID: 8300000, guid: b020875875fd44b959a4a919c031355f, type: 3}
+    Output: {fileID: -344685320796238877, guid: fab2831f9eb0a46bea31fa432af14303, type: 2}
+    volumes:
+    - 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: AlienIdle
     clips:
     - {fileID: 8300000, guid: ecad93fce4b814f45b9d5dbd85135b55, type: 3}
     - {fileID: 8300000, guid: 0e4f99e493d2f43a08db842c1df544d8, type: 3}
@@ -251,15 +257,18 @@ MonoBehaviour:
     pitch: 1
     loop: 0
     source: {fileID: 0}
-  - name: MoonAnimation
+  - name: AstroidIdle
     clips:
-    - {fileID: 8300000, guid: b020875875fd44b959a4a919c031355f, type: 3}
-    Output: {fileID: -344685320796238877, guid: fab2831f9eb0a46bea31fa432af14303, type: 2}
+    - {fileID: 8300000, guid: 60c65e332538b47aebfefb3789c4d192, type: 3}
+    - {fileID: 8300000, guid: 94db2be22970e43dba4ed0a28276e59f, type: 3}
+    - {fileID: 8300000, guid: 61c7f0898d2354723b7f63d6448c2b10, type: 3}
+    - {fileID: 8300000, guid: b43299f9552634f17950367fad00fbe4, type: 3}
+    Output: {fileID: -5869262110335406333, guid: fab2831f9eb0a46bea31fa432af14303, type: 2}
     volumes:
     - 1
     - 1
     - 1
     - 1
     pitch: 1
-    loop: 1
+    loop: 0
     source: {fileID: 0}

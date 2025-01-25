@@ -180,5 +180,6 @@ public enum SoundsNames
     StartGameButton,
     BirdAnimation,
     MoonAnimation,
-
+    AlienIdle,
+    AstroidIdle,
 }
