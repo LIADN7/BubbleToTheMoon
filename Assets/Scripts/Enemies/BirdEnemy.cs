@@ -56,4 +56,9 @@ public class BirdEnemy : Enemy
         SoundManager.inst.Play(SoundsNames.BirdIdle);
     }
 
+
+    protected void CrowAnimSound()
+    {
+        SoundManager.inst.Play(SoundsNames.BirdAnimation);
+    }
 }

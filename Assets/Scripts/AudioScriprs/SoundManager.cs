@@ -13,7 +13,6 @@ using UnityEngine.UIElements;
         [Range(0f, 3f)] public float pitch = 1f;
         public bool loop; 
         [HideInInspector] public AudioSource source;
-
     }
 
 public class SoundManager : MonoBehaviour
@@ -61,8 +60,12 @@ public class SoundManager : MonoBehaviour
             return;
         }
         Debug.Log("Player hit sound play!");
-        s.source.Play();
+
+            s.source.Play();
+
     }
+
+
     public void Stop(SoundsNames name)
     {
         Sound s = System.Array.Find(sounds, sound => sound.name == name.ToString());
@@ -128,7 +131,7 @@ GumExplosion,
 SnotUp,
 SnotDown,
 SnotExplosion,
-BeesIdleSound,
+    BeesIdle,
 BeesExplotion,
 BirdIdle,
 BirdExplotion,
