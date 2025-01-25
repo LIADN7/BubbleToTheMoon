@@ -18,7 +18,7 @@ public class CameraFollow : MonoBehaviour
         FindAllPlayers();
 
         // Initialize the camera's starting Y position
-        currentCameraY = transform.position.y;
+        // currentCameraY = transform.position.y;
     }
 
     private void FindAllPlayers()
@@ -33,31 +33,31 @@ public class CameraFollow : MonoBehaviour
         if (manager.IsState(GameState.Play))
         {
 
-        if (playerTransforms == null || playerTransforms.Count == 0) return;
+            if (playerTransforms == null || playerTransforms.Count == 0) return;
 
-        // Find the highest Y position among the players
-        float highestY = float.MinValue;
+            // Find the highest Y position among the players
+            float highestY = float.MinValue;
 
-        foreach (Transform player in playerTransforms)
-        {
-            if (player != null && player.position.y > highestY)
+            foreach (Transform player in playerTransforms)
             {
-                highestY = player.position.y;
+                if (player != null && player.position.y > highestY)
+                {
+                    highestY = player.position.y;
+                }
             }
-        }
 
-        // Calculate the new Y position for the camera
-        float targetY = highestY + offsetY;
+            // Calculate the new Y position for the camera
+            float targetY = highestY + offsetY;
 
-        // Ensure the camera does not move down
-        if (targetY > currentCameraY)
-        {
-            currentCameraY = targetY;
-        }
+            // Ensure the camera does not move down
+            if (targetY > currentCameraY)
+            {
+                currentCameraY = targetY;
+            }
 
-        // Update the camera's position: only adjust Y, keep X and Z constant
-        Vector3 newCameraPosition = new Vector3(transform.position.x, currentCameraY, transform.position.z);
-        transform.position = newCameraPosition;
+            // Update the camera's position: only adjust Y, keep X and Z constant
+            Vector3 newCameraPosition = new Vector3(transform.position.x, currentCameraY, transform.position.z);
+            transform.position = newCameraPosition;
         }
     }
 }

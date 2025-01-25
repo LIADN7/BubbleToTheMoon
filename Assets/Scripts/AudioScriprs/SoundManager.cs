@@ -4,16 +4,16 @@ using UnityEngine.Audio;
 using UnityEngine.UIElements;
 
 [System.Serializable]
-    public class Sound
-    {
-        public String name;
-        public AudioClip[] clips;
-        public AudioMixerGroup Output; 
-        [Range(0f, 1f)] public float[] volumes;
-        [Range(0f, 3f)] public float pitch = 1f;
-        public bool loop; 
-        [HideInInspector] public AudioSource source;
-    }
+public class Sound
+{
+    public String name;
+    public AudioClip[] clips;
+    public AudioMixerGroup Output;
+    [Range(0f, 1f)] public float[] volumes;
+    [Range(0f, 3f)] public float pitch = 1f;
+    public bool loop;
+    [HideInInspector] public AudioSource source;
+}
 
 public class SoundManager : MonoBehaviour
 {
@@ -23,11 +23,11 @@ public class SoundManager : MonoBehaviour
 
     private void Awake()
     {
-        
+
         if (inst == null)
         {
             inst = this;
-            DontDestroyOnLoad (gameObject);
+            DontDestroyOnLoad(gameObject);
         }
         else
         {
@@ -41,17 +41,17 @@ public class SoundManager : MonoBehaviour
             {
                 Debug.LogError($"Sound {s.name} has no clips assigned!");
                 continue;
-        }
+            }
 
             s.source = gameObject.AddComponent<AudioSource>();
             s.source.clip = s.clips[0];
-           // s.source.volume = s.volumes[0];
+            // s.source.volume = s.volumes[0];
             s.source.pitch = s.pitch;
             s.source.loop = s.loop;
             s.source.outputAudioMixerGroup = s.Output;
             // s.source.outputAudioMixerGroup = s.outputGroup;
         }
-        
+
     }
     public void Play(SoundsNames name)
     {
@@ -63,7 +63,7 @@ public class SoundManager : MonoBehaviour
         }
         Debug.Log("Player hit sound play!");
 
-            s.source.Play();
+        s.source.Play();
 
     }
 
@@ -88,15 +88,16 @@ public class SoundManager : MonoBehaviour
             Debug.LogWarning($"Sound: {name} not found!");
             return;
         }
-        if(i<0) {
+        if (i < 0 && i < s.clips.Length)
+        {
             s.source.PlayOneShot(s.clips[0]);
-         volume = s.volumes[0];  
+            volume = s.volumes[0];
 
         }
-        else if (i<s.clips.Length)
+        else if (i < s.clips.Length)
         {
             s.source.PlayOneShot(s.clips[i]);
-        volume = s.volumes[i];  
+            volume = s.volumes[i];
 
         }
 
@@ -122,7 +123,7 @@ public class SoundManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 
     // Mute all sounds
@@ -154,30 +155,30 @@ public class SoundManager : MonoBehaviour
     }
 
 }
-public enum SoundsNames 
+public enum SoundsNames
 {
-BlowingGumUp,
+    BlowingGumUp,
     BlowingGumDown,
-GumExplosion,
-SnotUp,
-SnotDown,
-SnotExplosion,
+    GumExplosion,
+    SnotUp,
+    SnotDown,
+    SnotExplosion,
     BeesIdle,
-BeesExplotion,
-BirdIdle,
-BirdExplotion,
-WinSound,
-LoseSound,
-StartGame,
-CountToGame,
-MainMenuMusic,
-MainGameMusic,
-AmbianceSound,
-PauseButton,
-ResumeButton,
-RestartGame,
-StartGameButton,
-BirdAnimation,
-MoonAnimation,
+    BeesExplotion,
+    BirdIdle,
+    BirdExplotion,
+    WinSound,
+    LoseSound,
+    StartGame,
+    CountToGame,
+    MainMenuMusic,
+    MainGameMusic,
+    AmbianceSound,
+    PauseButton,
+    ResumeButton,
+    RestartGame,
+    StartGameButton,
+    BirdAnimation,
+    MoonAnimation,
 
 }

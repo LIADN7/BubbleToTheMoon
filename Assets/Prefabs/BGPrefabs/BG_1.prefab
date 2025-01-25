@@ -10,19 +10,27 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2556240578049315853, guid: 8a7eff7b1b55a7449addef4e2052d2cb, type: 3}
       propertyPath: m_SpriteTilingProperty.newSize.x
-      value: 19.2
+      value: 60.000004
       objectReference: {fileID: 0}
     - target: {fileID: 2556240578049315853, guid: 8a7eff7b1b55a7449addef4e2052d2cb, type: 3}
       propertyPath: m_SpriteTilingProperty.newSize.y
-      value: 10.8
+      value: 33.750004
+      objectReference: {fileID: 0}
+    - target: {fileID: 2556240578049315853, guid: 8a7eff7b1b55a7449addef4e2052d2cb, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.x
+      value: 60.000004
+      objectReference: {fileID: 0}
+    - target: {fileID: 2556240578049315853, guid: 8a7eff7b1b55a7449addef4e2052d2cb, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.y
+      value: 33.750004
       objectReference: {fileID: 0}
     - target: {fileID: 3392250759884104155, guid: 8a7eff7b1b55a7449addef4e2052d2cb, type: 3}
       propertyPath: m_Size.x
-      value: 19.2
+      value: 60.000004
       objectReference: {fileID: 0}
     - target: {fileID: 3392250759884104155, guid: 8a7eff7b1b55a7449addef4e2052d2cb, type: 3}
       propertyPath: m_Size.y
-      value: 10.8
+      value: 33.750004
       objectReference: {fileID: 0}
     - target: {fileID: 3392250759884104155, guid: 8a7eff7b1b55a7449addef4e2052d2cb, type: 3}
       propertyPath: m_Sprite
@@ -79,7 +87,7 @@ PrefabInstance:
     - target: {fileID: 7956969115365326412, guid: 8a7eff7b1b55a7449addef4e2052d2cb, type: 3}
       propertyPath: 'enemies.Array.data[0]'
       value: 
-      objectReference: {fileID: 6569268340490211693, guid: 533b98753774bba4199db1f3b1813a5b, type: 3}
+      objectReference: {fileID: -3179778382068823269, guid: 533b98753774bba4199db1f3b1813a5b, type: 3}
     - target: {fileID: 7956969115365326412, guid: 8a7eff7b1b55a7449addef4e2052d2cb, type: 3}
       propertyPath: 'enemies.Array.data[1]'
       value: 
