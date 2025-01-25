@@ -47,6 +47,11 @@ public class Player : MonoBehaviour
             {
                 Destroy(this.gameObject);
             }
+            if (CheckForWin())
+            {
+                manager.ChangeState(GameState.Endgame);
+                canvasController.ShowWinner(PlayerName);
+            }
         }
     }
     private bool IsOutOfScreen()
@@ -54,7 +59,12 @@ public class Player : MonoBehaviour
         Vector3 screenPoint = Camera.main.WorldToViewportPoint(transform.position);
         return screenPoint.x < -0.7f || screenPoint.x > 1.7f || screenPoint.y < -0.7f || screenPoint.y > 1.7f;
     }
+    private bool CheckForWin()
+    {
+        int playersPlaying = FindObjectsByType<Player>(FindObjectsInactive.Exclude, FindObjectsSortMode.None).Length;
+        return playersPlaying == 1;
 
+    }
 
     /// <summary>
     /// Applies a downward force when the player is hit.

@@ -45,5 +45,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   level: 0
+  FINAL_LEVEL: 4
+  controllerPerLevelAmount: 4
   backgrounds:
   - {fileID: 8877849567595084143, guid: 8a7eff7b1b55a7449addef4e2052d2cb, type: 3}
+  - {fileID: 3885651087777658525, guid: 854c10d5fa78ad444bc5a7fa5fcb07d8, type: 3}
+  - {fileID: 7869181172766483935, guid: c68677332f3fec742b16a36967fd767a, type: 3}
+  - {fileID: 6763899509639159646, guid: 07d994d8b0f672b4ebdbba873d9c88a4, type: 3}
+  - {fileID: 8541672990071055867, guid: 2556ad14ae82efb4ab02074412ee8a89, type: 3}
+  transitions:
+  - {fileID: 5118926169276190901, guid: 7db6e780e0bdea645b78793b70b07a2b, type: 3}
+  - {fileID: 6995536555125732143, guid: ee9242fe6e309664ba028bc28cfd2e41, type: 3}
+  - {fileID: 2425035302783028262, guid: 1a93778e6f5b31645966afaaab52997a, type: 3}
+  - {fileID: 6763899509639159646, guid: 07d994d8b0f672b4ebdbba873d9c88a4, type: 3}
