@@ -46,7 +46,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   level: 0
   FINAL_LEVEL: 4
-  controllerPerLevelAmount: 1
+  controllerPerLevelAmount: 4
   backgrounds:
   - {fileID: 8877849567595084143, guid: 8a7eff7b1b55a7449addef4e2052d2cb, type: 3}
   - {fileID: 3885651087777658525, guid: 854c10d5fa78ad444bc5a7fa5fcb07d8, type: 3}
