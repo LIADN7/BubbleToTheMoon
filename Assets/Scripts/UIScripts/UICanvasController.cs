@@ -3,6 +3,7 @@ using UnityEngine;
 public class UICanvasController : MonoBehaviour
 {
     private bool isPaused;
+    private bool isMuted = false;
     private GameManager manager;
     [SerializeField] private GameObject WinnerScreen;
 
@@ -28,8 +29,25 @@ public class UICanvasController : MonoBehaviour
 
     public void ShowWinner(string winnerName)
     {
+        SoundManager.inst.Stop(SoundsNames.MainGameMusic);
+        SoundManager.inst.Play(SoundsNames.WinSound);
         WinnerScreen.SetActive(true);
         WinnerScreen.GetComponentInChildren<TextMeshProUGUI>().text = $"Player {winnerName} wins!";
+    }
+
+
+    public void MuteAll()
+    {
+        if (!isMuted)
+        {
+            SoundManager.inst.Mute();
+        }
+        else
+        {
+            SoundManager.inst.Unmute();
+
+        }
+        isMuted = !isMuted;
     }
 
 }

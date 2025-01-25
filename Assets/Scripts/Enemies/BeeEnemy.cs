@@ -47,7 +47,7 @@ public class BeeEnemy : Enemy
         }
         if (isTriggered)
         {
-            SoundManager.inst.Play(SoundsNames.BeesIdle);
+            SoundManager.inst.PlayOneShot(SoundsNames.BeesIdle, Random.Range(0, 4));
         }
         if (other.CompareTag("Player"))
         {
