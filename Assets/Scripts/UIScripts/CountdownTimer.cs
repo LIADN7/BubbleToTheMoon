@@ -6,14 +6,17 @@ using static GameManager;
 public class CountdownTimer : MonoBehaviour
 {
     TextMeshProUGUI countdownText;
-    [SerializeField] float countdownTime = 0f;
+    [SerializeField] float countdownTime = 3f;
     private GameManager manager;
 
     private void Awake()
     {
-        
+
         this.manager = GameManager.inst;
         countdownText = GetComponent<TextMeshProUGUI>();
+    }
+    private void Start()
+    {
     }
 
     public void PlayCoundown()
@@ -42,6 +45,8 @@ public class CountdownTimer : MonoBehaviour
         SoundManager.inst.Play(SoundsNames.MainGameMusic);
         manager.ChangeState(GameState.Play);
         countdownText.text = "";
+        countdownTime = 3;
+
     }
 
 
