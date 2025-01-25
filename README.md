@@ -8,12 +8,12 @@
 Be the first to reach the moon to win, inflate and diflate your bubble to avoid obstacles.
  
  
-![](https://github.com/LIADN7/DragonBallFire/blob/main/Assets/Img/ReadmeImg/Gameplay.gif)
+![](https://github.com/LIADN7/BubbleToTheMoon/blob/main/Assets/Art/StartingGameView.jpeg)
  
 ## To play on the web
  
-**[LINK]()**
+**[LINK](https://liadn7.itch.io/bubbletothemoon)**
  
 ## Credits
- 
+ ....
  
