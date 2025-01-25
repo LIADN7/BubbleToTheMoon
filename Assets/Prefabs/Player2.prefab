@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1001 &8536663811437640739
+--- !u!1001 &4782974178290615948
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -8,37 +8,33 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1514484713061199877, guid: 268338352128cc241a271302d22331b3, type: 3}
-      propertyPath: upKey
-      value: 119
-      objectReference: {fileID: 0}
-    - target: {fileID: 1514484713061199877, guid: 268338352128cc241a271302d22331b3, type: 3}
-      propertyPath: downKey
-      value: 115
-      objectReference: {fileID: 0}
-    - target: {fileID: 1514484713061199877, guid: 268338352128cc241a271302d22331b3, type: 3}
-      propertyPath: leftKey
-      value: 97
-      objectReference: {fileID: 0}
-    - target: {fileID: 1514484713061199877, guid: 268338352128cc241a271302d22331b3, type: 3}
-      propertyPath: rightKey
-      value: 100
-      objectReference: {fileID: 0}
-    - target: {fileID: 1514484713061199877, guid: 268338352128cc241a271302d22331b3, type: 3}
-      propertyPath: isTriggered
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 1945687816446847660, guid: 268338352128cc241a271302d22331b3, type: 3}
       propertyPath: m_Name
-      value: Player2 Variant
+      value: Player2
       objectReference: {fileID: 0}
     - target: {fileID: 2609914601338019482, guid: 268338352128cc241a271302d22331b3, type: 3}
-      propertyPath: m_IsTrigger
-      value: 0
+      propertyPath: m_SpriteTilingProperty.oldSize.x
+      value: 1.6
       objectReference: {fileID: 0}
+    - target: {fileID: 2609914601338019482, guid: 268338352128cc241a271302d22331b3, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.y
+      value: 1.96
+      objectReference: {fileID: 0}
+    - target: {fileID: 4172858403699777382, guid: 268338352128cc241a271302d22331b3, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.02
+      objectReference: {fileID: 0}
+    - target: {fileID: 4172858403699777382, guid: 268338352128cc241a271302d22331b3, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.281
+      objectReference: {fileID: 0}
+    - target: {fileID: 4942224330100220544, guid: 268338352128cc241a271302d22331b3, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: d1e13e417fb58bd448582e7017c15726, type: 2}
     - target: {fileID: 6441758775093594074, guid: 268338352128cc241a271302d22331b3, type: 3}
       propertyPath: upKey
-      value: 119
+      value: 106
       objectReference: {fileID: 0}
     - target: {fileID: 6441758775093594074, guid: 268338352128cc241a271302d22331b3, type: 3}
       propertyPath: downKey
@@ -51,14 +47,66 @@ PrefabInstance:
     - target: {fileID: 6441758775093594074, guid: 268338352128cc241a271302d22331b3, type: 3}
       propertyPath: rightKey
       value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 6441758775093594074, guid: 268338352128cc241a271302d22331b3, type: 3}
+      propertyPath: playerName
+      value: Snoty Boy
+      objectReference: {fileID: 0}
+    - target: {fileID: 6441758775093594074, guid: 268338352128cc241a271302d22331b3, type: 3}
+      propertyPath: 'gumSprites.Array.data[0]'
+      value: 
+      objectReference: {fileID: -5378953824043653424, guid: e350800f974822f45888a95116006adc, type: 3}
+    - target: {fileID: 6441758775093594074, guid: 268338352128cc241a271302d22331b3, type: 3}
+      propertyPath: 'gumSprites.Array.data[1]'
+      value: 
+      objectReference: {fileID: 8912035087014292119, guid: 5ef6592ab86779340bc6671a2d4cfea0, type: 3}
+    - target: {fileID: 6441758775093594074, guid: 268338352128cc241a271302d22331b3, type: 3}
+      propertyPath: 'gumSprites.Array.data[2]'
+      value: 
+      objectReference: {fileID: 8253510281300384966, guid: 8347f453b8b3cbc42b30d3464265e8ec, type: 3}
+    - target: {fileID: 6441758775093594074, guid: 268338352128cc241a271302d22331b3, type: 3}
+      propertyPath: 'gumSprites.Array.data[3]'
+      value: 
+      objectReference: {fileID: 6134303773193002517, guid: 58bd9b2c02f842a4faf87ef3642d8205, type: 3}
+    - target: {fileID: 6441758775093594074, guid: 268338352128cc241a271302d22331b3, type: 3}
+      propertyPath: 'gumSprites.Array.data[4]'
+      value: 
+      objectReference: {fileID: -5778854527572744729, guid: ce3b1ea68ce022b4d84dc6305a2ed177, type: 3}
+    - target: {fileID: 6441758775093594074, guid: 268338352128cc241a271302d22331b3, type: 3}
+      propertyPath: 'playerSprites.Array.data[0]'
+      value: 
+      objectReference: {fileID: -19531703858117181, guid: 8a9d4aceab1e51c4fbe11cbd1cd98f17, type: 3}
+    - target: {fileID: 6441758775093594074, guid: 268338352128cc241a271302d22331b3, type: 3}
+      propertyPath: 'playerSprites.Array.data[1]'
+      value: 
+      objectReference: {fileID: -7694296426430447779, guid: ce672323a0c8b8f49bfde8c019de6b77, type: 3}
+    - target: {fileID: 6582979876234966935, guid: 268338352128cc241a271302d22331b3, type: 3}
+      propertyPath: m_Radius
+      value: 0.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 6619236548117142640, guid: 268338352128cc241a271302d22331b3, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.03
+      objectReference: {fileID: 0}
+    - target: {fileID: 6619236548117142640, guid: 268338352128cc241a271302d22331b3, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.15
+      objectReference: {fileID: 0}
+    - target: {fileID: 8084470607245348698, guid: 268338352128cc241a271302d22331b3, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -5378953824043653424, guid: e350800f974822f45888a95116006adc, type: 3}
+    - target: {fileID: 8084470607245348698, guid: 268338352128cc241a271302d22331b3, type: 3}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8383781680326869533, guid: 268338352128cc241a271302d22331b3, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -3.18
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8383781680326869533, guid: 268338352128cc241a271302d22331b3, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.86
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8383781680326869533, guid: 268338352128cc241a271302d22331b3, type: 3}
       propertyPath: m_LocalPosition.z
@@ -92,8 +140,80 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 8795865415382777562, guid: 268338352128cc241a271302d22331b3, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -19531703858117181, guid: 8a9d4aceab1e51c4fbe11cbd1cd98f17, type: 3}
+    m_RemovedComponents:
+    - {fileID: 6441758775093594074, guid: 268338352128cc241a271302d22331b3, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1945687816446847660, guid: 268338352128cc241a271302d22331b3, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1616441595899887604}
   m_SourcePrefab: {fileID: 100100000, guid: 268338352128cc241a271302d22331b3, type: 3}
+--- !u!95 &501807741087147020 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 4942224330100220544, guid: 268338352128cc241a271302d22331b3, type: 3}
+  m_PrefabInstance: {fileID: 4782974178290615948}
+  m_PrefabAsset: {fileID: 0}
+--- !u!58 &1818320641097953563 stripped
+CircleCollider2D:
+  m_CorrespondingSourceObject: {fileID: 6582979876234966935, guid: 268338352128cc241a271302d22331b3, type: 3}
+  m_PrefabInstance: {fileID: 4782974178290615948}
+  m_PrefabAsset: {fileID: 0}
+--- !u!212 &3625756705999210966 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 8084470607245348698, guid: 268338352128cc241a271302d22331b3, type: 3}
+  m_PrefabInstance: {fileID: 4782974178290615948}
+  m_PrefabAsset: {fileID: 0}
+--- !u!212 &4067235703198087254 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 8795865415382777562, guid: 268338352128cc241a271302d22331b3, type: 3}
+  m_PrefabInstance: {fileID: 4782974178290615948}
+  m_PrefabAsset: {fileID: 0}
+--- !u!212 &4743307352291386747 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 266580216476034039, guid: 268338352128cc241a271302d22331b3, type: 3}
+  m_PrefabInstance: {fileID: 4782974178290615948}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &6440412922525936672 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1945687816446847660, guid: 268338352128cc241a271302d22331b3, type: 3}
+  m_PrefabInstance: {fileID: 4782974178290615948}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1616441595899887604
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6440412922525936672}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2a4173aefa6a2eb4e87f8ebfbc5cae34, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  upKey: 119
+  downKey: 115
+  rightKey: 100
+  leftKey: 97
+  playerName: Snoty Boy
+  playerSpriteRenderer: {fileID: 4067235703198087254}
+  bubbleSpriteRenderer: {fileID: 3625756705999210966}
+  bubbleCollider: {fileID: 1818320641097953563}
+  maxSpeedY: 5
+  speedStepY: 1
+  isTriggered: 0
+  playerSprites:
+  - {fileID: -19531703858117181, guid: 8a9d4aceab1e51c4fbe11cbd1cd98f17, type: 3}
+  - {fileID: -7694296426430447779, guid: ce672323a0c8b8f49bfde8c019de6b77, type: 3}
+  gumSprites:
+  - {fileID: -5378953824043653424, guid: e350800f974822f45888a95116006adc, type: 3}
+  - {fileID: 8912035087014292119, guid: 5ef6592ab86779340bc6671a2d4cfea0, type: 3}
+  - {fileID: 8253510281300384966, guid: 8347f453b8b3cbc42b30d3464265e8ec, type: 3}
+  - {fileID: 6134303773193002517, guid: 58bd9b2c02f842a4faf87ef3642d8205, type: 3}
+  - {fileID: -5778854527572744729, guid: ce3b1ea68ce022b4d84dc6305a2ed177, type: 3}
+  bubbleExpSpriteRenderer: {fileID: 4743307352291386747}
+  bubbleExpAnimator: {fileID: 501807741087147020}

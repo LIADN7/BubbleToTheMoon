@@ -1,0 +1,1027 @@
+fileFormatVersion: 2
+guid: 087435ca8ad73b44bb2896293a940fc5
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 9020128685364992851
+    second: GirlBubble-Pop_00010_0
+  - first:
+      213: 1845620049637759760
+    second: GirlBubble-Pop_00010_1
+  - first:
+      213: -1786922275415119833
+    second: GirlBubble-Pop_00010_2
+  - first:
+      213: 1908480371761277029
+    second: GirlBubble-Pop_00010_3
+  - first:
+      213: -2761265909400950686
+    second: GirlBubble-Pop_00010_4
+  - first:
+      213: 1335525537152835191
+    second: GirlBubble-Pop_00010_5
+  - first:
+      213: 829567847646548727
+    second: GirlBubble-Pop_00010_6
+  - first:
+      213: 2479977449362344239
+    second: GirlBubble-Pop_00010_7
+  - first:
+      213: -1045061670791301746
+    second: GirlBubble-Pop_00010_8
+  - first:
+      213: -5760559683728209779
+    second: GirlBubble-Pop_00010_9
+  - first:
+      213: 6059253353782970602
+    second: GirlBubble-Pop_00010_10
+  - first:
+      213: 1824034916471151082
+    second: GirlBubble-Pop_00010_11
+  - first:
+      213: 2556276560557518822
+    second: GirlBubble-Pop_00010_12
+  - first:
+      213: -4905297482596093199
+    second: GirlBubble-Pop_00010_13
+  - first:
+      213: -1193473311684710827
+    second: GirlBubble-Pop_00010_14
+  - first:
+      213: -3565091093684079802
+    second: GirlBubble-Pop_00010_15
+  - first:
+      213: -6166424045088984199
+    second: GirlBubble-Pop_00010_16
+  - first:
+      213: 4895418737789550872
+    second: GirlBubble-Pop_00010_17
+  - first:
+      213: -1403786722458548530
+    second: GirlBubble-Pop_00010_18
+  - first:
+      213: 6458521257396566119
+    second: GirlBubble-Pop_00010_19
+  - first:
+      213: -3543232110504448271
+    second: GirlBubble-Pop_00010_20
+  - first:
+      213: -5134625407343657378
+    second: GirlBubble-Pop_00010_21
+  - first:
+      213: -8910774231968754145
+    second: GirlBubble-Pop_00010_22
+  - first:
+      213: 2650959799343120005
+    second: GirlBubble-Pop_00010_23
+  - first:
+      213: 7348477918664128777
+    second: GirlBubble-Pop_00010_24
+  - first:
+      213: -7202139317483026477
+    second: GirlBubble-Pop_00010_25
+  - first:
+      213: 8176880707120912835
+    second: GirlBubble-Pop_00010_26
+  - first:
+      213: 4767914129668802230
+    second: GirlBubble-Pop_00010_27
+  - first:
+      213: 6100797450405296249
+    second: GirlBubble-Pop_00010_28
+  - first:
+      213: -390009262923266369
+    second: GirlBubble-Pop_00010_29
+  - first:
+      213: 1162295474233778189
+    second: GirlBubble-Pop_00010_30
+  - first:
+      213: -8482944461222447246
+    second: GirlBubble-Pop_00010_31
+  - first:
+      213: 8743395010986942803
+    second: GirlBubble-Pop_00010_32
+  - first:
+      213: -7874270177284386109
+    second: GirlBubble-Pop_00010_33
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: GirlBubble-Pop_00010_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 106
+        width: 43
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 35bdd77af3fed2d70800000000000000
+      internalID: 9020128685364992851
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GirlBubble-Pop_00010_1
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 126
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 01b5ff818a5fc9910800000000000000
+      internalID: 1845620049637759760
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GirlBubble-Pop_00010_2
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 110
+        width: 54
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 72826a478a39337e0800000000000000
+      internalID: -1786922275415119833
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GirlBubble-Pop_00010_3
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 104
+        width: 18
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 568e2ab59c84c7a10800000000000000
+      internalID: 1908480371761277029
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GirlBubble-Pop_00010_4
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 118
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 268a2c309430ea9d0800000000000000
+      internalID: -2761265909400950686
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GirlBubble-Pop_00010_5
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 104
+        width: 8
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 77e157e666db88210800000000000000
+      internalID: 1335525537152835191
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GirlBubble-Pop_00010_6
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 104
+        width: 10
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7f2de0cef87338b00800000000000000
+      internalID: 829567847646548727
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GirlBubble-Pop_00010_7
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 94
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f29c838c956aa6220800000000000000
+      internalID: 2479977449362344239
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GirlBubble-Pop_00010_8
+      rect:
+        serializedVersion: 2
+        x: 118
+        y: 90
+        width: 8
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e85bb1882f13f71f0800000000000000
+      internalID: -1045061670791301746
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GirlBubble-Pop_00010_9
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 92
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d8881f70d716e00b0800000000000000
+      internalID: -5760559683728209779
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GirlBubble-Pop_00010_10
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 90
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ae8045c62dac61450800000000000000
+      internalID: 6059253353782970602
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GirlBubble-Pop_00010_11
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 90
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ae91c26a716405910800000000000000
+      internalID: 1824034916471151082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GirlBubble-Pop_00010_12
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 90
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ef20b3fcf7b97320800000000000000
+      internalID: 2556276560557518822
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GirlBubble-Pop_00010_13
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 90
+        width: 13
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1f2fd30dde1ecebb0800000000000000
+      internalID: -4905297482596093199
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GirlBubble-Pop_00010_14
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 84
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 55eaf18a85eef6fe0800000000000000
+      internalID: -1193473311684710827
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GirlBubble-Pop_00010_15
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 76
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6433d09f980468ec0800000000000000
+      internalID: -3565091093684079802
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GirlBubble-Pop_00010_16
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 80
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9733b0a80067c6aa0800000000000000
+      internalID: -6166424045088984199
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GirlBubble-Pop_00010_17
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 74
+        width: 10
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 811ccbca76500f340800000000000000
+      internalID: 4895418737789550872
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GirlBubble-Pop_00010_18
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 82
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ec6c27bd96fb48ce0800000000000000
+      internalID: -1403786722458548530
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GirlBubble-Pop_00010_19
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 62
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7687e696dd641a950800000000000000
+      internalID: 6458521257396566119
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GirlBubble-Pop_00010_20
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 62
+        width: 12
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1feef981b29e3dec0800000000000000
+      internalID: -3543232110504448271
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GirlBubble-Pop_00010_21
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 72
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e5ef59c75652eb8b0800000000000000
+      internalID: -5134625407343657378
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GirlBubble-Pop_00010_22
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 66
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f165ccd1c02965480800000000000000
+      internalID: -8910774231968754145
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GirlBubble-Pop_00010_23
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 30
+        width: 17
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 58effa164e91ac420800000000000000
+      internalID: 2650959799343120005
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GirlBubble-Pop_00010_24
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 62
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 909f6cdabb90bf560800000000000000
+      internalID: 7348477918664128777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GirlBubble-Pop_00010_25
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 56
+        width: 6
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d7cc86037cdc0c90800000000000000
+      internalID: -7202139317483026477
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GirlBubble-Pop_00010_26
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 40
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3c9dfae1ead1a7170800000000000000
+      internalID: 8176880707120912835
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GirlBubble-Pop_00010_27
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 42
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6b68972b3a80b2240800000000000000
+      internalID: 4767914129668802230
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GirlBubble-Pop_00010_28
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 42
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 978340e25f26aa450800000000000000
+      internalID: 6100797450405296249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GirlBubble-Pop_00010_29
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 12
+        width: 12
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fb6c85844a8669af0800000000000000
+      internalID: -390009262923266369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GirlBubble-Pop_00010_30
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 12
+        width: 26
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d00afb1639d412010800000000000000
+      internalID: 1162295474233778189
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GirlBubble-Pop_00010_31
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 24
+        width: 10
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 277f77305f6864a80800000000000000
+      internalID: -8482944461222447246
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GirlBubble-Pop_00010_32
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 0
+        width: 40
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 351acc02077c65970800000000000000
+      internalID: 8743395010986942803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GirlBubble-Pop_00010_33
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 0
+        width: 28
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3c213815ef8f8b290800000000000000
+      internalID: -7874270177284386109
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      GirlBubble-Pop_00010_0: 9020128685364992851
+      GirlBubble-Pop_00010_1: 1845620049637759760
+      GirlBubble-Pop_00010_10: 6059253353782970602
+      GirlBubble-Pop_00010_11: 1824034916471151082
+      GirlBubble-Pop_00010_12: 2556276560557518822
+      GirlBubble-Pop_00010_13: -4905297482596093199
+      GirlBubble-Pop_00010_14: -1193473311684710827
+      GirlBubble-Pop_00010_15: -3565091093684079802
+      GirlBubble-Pop_00010_16: -6166424045088984199
+      GirlBubble-Pop_00010_17: 4895418737789550872
+      GirlBubble-Pop_00010_18: -1403786722458548530
+      GirlBubble-Pop_00010_19: 6458521257396566119
+      GirlBubble-Pop_00010_2: -1786922275415119833
+      GirlBubble-Pop_00010_20: -3543232110504448271
+      GirlBubble-Pop_00010_21: -5134625407343657378
+      GirlBubble-Pop_00010_22: -8910774231968754145
+      GirlBubble-Pop_00010_23: 2650959799343120005
+      GirlBubble-Pop_00010_24: 7348477918664128777
+      GirlBubble-Pop_00010_25: -7202139317483026477
+      GirlBubble-Pop_00010_26: 8176880707120912835
+      GirlBubble-Pop_00010_27: 4767914129668802230
+      GirlBubble-Pop_00010_28: 6100797450405296249
+      GirlBubble-Pop_00010_29: -390009262923266369
+      GirlBubble-Pop_00010_3: 1908480371761277029
+      GirlBubble-Pop_00010_30: 1162295474233778189
+      GirlBubble-Pop_00010_31: -8482944461222447246
+      GirlBubble-Pop_00010_32: 8743395010986942803
+      GirlBubble-Pop_00010_33: -7874270177284386109
+      GirlBubble-Pop_00010_4: -2761265909400950686
+      GirlBubble-Pop_00010_5: 1335525537152835191
+      GirlBubble-Pop_00010_6: 829567847646548727
+      GirlBubble-Pop_00010_7: 2479977449362344239
+      GirlBubble-Pop_00010_8: -1045061670791301746
+      GirlBubble-Pop_00010_9: -5760559683728209779
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
