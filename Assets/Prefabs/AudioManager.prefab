@@ -124,10 +124,10 @@ MonoBehaviour:
     source: {fileID: 0}
   - name: BeesIdle
     clips:
-    - {fileID: 8300000, guid: 818fece1c27224488b7107203a388361, type: 3}
-    - {fileID: 8300000, guid: 818fece1c27224488b7107203a388361, type: 3}
-    - {fileID: 8300000, guid: 818fece1c27224488b7107203a388361, type: 3}
-    - {fileID: 8300000, guid: 818fece1c27224488b7107203a388361, type: 3}
+    - {fileID: 8300000, guid: f1deca9d9706e479a8bcce07eb5935e5, type: 3}
+    - {fileID: 8300000, guid: a8efe600922df4d95bba120e04bfccd9, type: 3}
+    - {fileID: 8300000, guid: 3e32b39048a4b4b2893e6117f6c5015b, type: 3}
+    - {fileID: 8300000, guid: 447ffb975fc294f7b81850b72573f797, type: 3}
     Output: {fileID: -5869262110335406333, guid: fab2831f9eb0a46bea31fa432af14303, type: 2}
     volumes:
     - 1
@@ -236,6 +236,30 @@ MonoBehaviour:
     pitch: 1
     loop: 0
     source: {fileID: 0}
-  audioMixer: {fileID: 24100000, guid: fab2831f9eb0a46bea31fa432af14303, type: 2}
-  pauseSnapshotName: PauseMenu
-  normalSnapshotName: Normal
+  - name: AlianIdle
+    clips:
+    - {fileID: 8300000, guid: ecad93fce4b814f45b9d5dbd85135b55, type: 3}
+    - {fileID: 8300000, guid: 0e4f99e493d2f43a08db842c1df544d8, type: 3}
+    - {fileID: 8300000, guid: a7723fde31bed4afc8432acc8ac2ab4a, type: 3}
+    - {fileID: 8300000, guid: afd59b6920bc1469692bc54e5971f4dd, type: 3}
+    Output: {fileID: -5869262110335406333, guid: fab2831f9eb0a46bea31fa432af14303, type: 2}
+    volumes:
+    - 1
+    - 1
+    - 1
+    - 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: MoonAnimation
+    clips:
+    - {fileID: 8300000, guid: b020875875fd44b959a4a919c031355f, type: 3}
+    Output: {fileID: -344685320796238877, guid: fab2831f9eb0a46bea31fa432af14303, type: 2}
+    volumes:
+    - 1
+    - 1
+    - 1
+    - 1
+    pitch: 1
+    loop: 1
+    source: {fileID: 0}

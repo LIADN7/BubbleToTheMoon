@@ -46,6 +46,9 @@ public class AlienEnemy : Enemy
         if (other.gameObject.CompareTag("CameraTop"))
         {
             Trigger();
+
+            SoundManager.inst.PlayOneShot(SoundsNames.AlianIdle, Random.Range(0, 4));
+
         }
         if (isTriggered)
         {
