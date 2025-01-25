@@ -1,9 +1,11 @@
+using System.Collections.Generic;
+using System.Xml.Serialization;
 using UnityEngine;
 
 public class CameraFollow : MonoBehaviour
 {
 
-    [SerializeField] private Transform[] playerTransforms; // Array of player Transforms
+    [SerializeField] private List<Transform> playerTransforms = new List<Transform>(); // Array of player Transforms
     [SerializeField] private float offsetY = 2f; // Offset above the highest player's Y position
 
     private float currentCameraY; // To track the camera's current Y position
@@ -11,14 +13,22 @@ public class CameraFollow : MonoBehaviour
     private void Start()
     {
         SoundManager.inst.Play(SoundsNames.MainMenuMusic);
+        FindAllPlayers();
+
         // Initialize the camera's starting Y position
         currentCameraY = transform.position.y;
     }
 
-
+    private void FindAllPlayers()
+    {
+        Player[] playersPlaying = FindObjectsByType<Player>(FindObjectsInactive.Exclude, FindObjectsSortMode.None);
+        foreach (Player player in playersPlaying)
+            if (player != null)
+                playerTransforms.Add(player.transform);
+    }
     private void LateUpdate()
     {
-        if (playerTransforms == null || playerTransforms.Length == 0) return;
+        if (playerTransforms == null || playerTransforms.Count == 0) return;
 
         // Find the highest Y position among the players
         float highestY = float.MinValue;
