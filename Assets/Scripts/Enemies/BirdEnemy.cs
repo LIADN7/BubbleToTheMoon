@@ -6,6 +6,8 @@ public class BirdEnemy : Enemy
     private bool moveUpwards = false; // Determines if the bird moves diagonally up
     private float diagonalAngle = 15f; // Angle of diagonal movement in degrees
     private float minSpeed = 4f, maxSpeed = 7f;
+    private float minRotate = 0f, maxRotate = -0.2f;
+
 
     private void Awake()
     {
@@ -15,14 +17,13 @@ public class BirdEnemy : Enemy
     private void Start()
     {
         this.speed = Random.Range(minSpeed, maxSpeed);
-    
-        if (!rightSide)
-            transform.rotation = Quaternion.Euler(0, 180, 0);
+
+        transform.rotation = Quaternion.Euler(0, rightSide ? 0 : 180, 0);
     }
 
     protected override void Move()
     {
-        transform.position += (rightSide ? -1 : 1) * Vector3.right * speed * Time.deltaTime;
+        transform.position += (rightSide ? -1 : 1) * new Vector3(1, (rightSide ? -1 : 1) * Random.Range(minRotate, maxRotate), 0) * speed * Time.deltaTime;
         if (IsOutOfScreen())
             Destroy(gameObject);
     }
@@ -59,6 +60,10 @@ public class BirdEnemy : Enemy
 
     protected void CrowAnimSound()
     {
-        SoundManager.inst.Play(SoundsNames.BirdAnimation);
+        if (isTriggered)
+        {
+
+            SoundManager.inst.Play(SoundsNames.BirdAnimation);
+        }
     }
 }

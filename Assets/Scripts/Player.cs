@@ -57,7 +57,7 @@ public class Player : MonoBehaviour
     private bool IsOutOfScreen()
     {
         Vector3 screenPoint = Camera.main.WorldToViewportPoint(transform.position);
-        return screenPoint.x < -0.7f || screenPoint.x > 1.7f || screenPoint.y < -0.7f || screenPoint.y > 1.7f;
+        return screenPoint.x < -0.2f || screenPoint.x > 1.2f || screenPoint.y < -0.3f || screenPoint.y > 1.7f;
     }
     private bool CheckForWin()
     {
@@ -133,7 +133,7 @@ public class Player : MonoBehaviour
     protected virtual void HandleUpAndDownChange(int direction)
     {
         currentLevelY += direction;
-        currentSpeedY += speedStepY * direction;
+        currentSpeedY += (speedStepY * direction) + 0.1f;
 
     }
 

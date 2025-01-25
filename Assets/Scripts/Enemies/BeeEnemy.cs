@@ -6,6 +6,7 @@ public class BeeEnemy : Enemy
     private float horizontalSpeed = 2f; // Horizontal movement speed
     private bool isMovingRight = true; // Determines the current horizontal direction
     private float minSpeed = 4f, maxSpeed = 7f;
+    private bool isDead = false;
 
     private void Awake()
     {
@@ -17,7 +18,7 @@ public class BeeEnemy : Enemy
         this.speed = Random.Range(minSpeed, maxSpeed);
         this.flyHeight = Random.Range(minSpeed, maxSpeed);
         this.horizontalSpeed = Random.Range(1, 3);
-        
+
     }
 
 
@@ -35,8 +36,25 @@ public class BeeEnemy : Enemy
             isMovingRight = true;
     }
 
+    protected override void Die(Collider2D other)
+    {
 
+        base.Die(other);
+        isTriggered = false;
+        isDead = true;
+        SoundManager.inst.Play(SoundsNames.BeesExplotion);
 
+    }
+
+    protected override void Update()
+    {
+        base.Update();
+        if (isDead)
+        {
+            transform.position += Vector3.down * speed * 2 * Time.deltaTime;
+
+        }
+    }
 
 
     protected void OnTriggerEnter2D(Collider2D other)
@@ -44,16 +62,13 @@ public class BeeEnemy : Enemy
         if (other.gameObject.CompareTag("CameraTop"))
         {
             Trigger();
-        }
-        if (isTriggered)
-        {
             SoundManager.inst.PlayOneShot(SoundsNames.BeesIdle, Random.Range(0, 4));
         }
         if (other.CompareTag("Player"))
         {
             //sound
             // Stop movement
+            Die(other);
         }
-        Die(other);
     }
 }
