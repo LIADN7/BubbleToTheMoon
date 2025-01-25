@@ -32,7 +32,7 @@ public class UICanvasController : MonoBehaviour
         SoundManager.inst.Stop(SoundsNames.MainGameMusic);
         SoundManager.inst.Play(SoundsNames.WinSound);
         WinnerScreen.SetActive(true);
-        WinnerScreen.GetComponentInChildren<TextMeshProUGUI>().text = $"Player {winnerName} wins!";
+        WinnerScreen.GetComponentInChildren<TextMeshProUGUI>().text = $"{winnerName} Wins!";
     }
 
 

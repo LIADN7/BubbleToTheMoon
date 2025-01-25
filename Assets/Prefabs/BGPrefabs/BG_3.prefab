@@ -18,7 +18,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4044397454452434541, guid: 8a7eff7b1b55a7449addef4e2052d2cb, type: 3}
       propertyPath: spawnCount
-      value: 10
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 4044397454452434541, guid: 8a7eff7b1b55a7449addef4e2052d2cb, type: 3}
       propertyPath: elements.Array.size
