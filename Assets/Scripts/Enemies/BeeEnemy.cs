@@ -17,6 +17,7 @@ public class BeeEnemy : Enemy
         this.speed = Random.Range(minSpeed, maxSpeed);
         this.flyHeight = Random.Range(minSpeed, maxSpeed);
         this.horizontalSpeed = Random.Range(1, 3);
+        
     }
 
 
@@ -43,6 +44,10 @@ public class BeeEnemy : Enemy
         if (other.gameObject.CompareTag("CameraTop"))
         {
             Trigger();
+        }
+        if (isTriggered)
+        {
+            SoundManager.inst.Play(SoundsNames.BeesIdle);
         }
         if (other.CompareTag("Player"))
         {
