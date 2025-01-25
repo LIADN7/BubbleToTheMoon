@@ -144,5 +144,6 @@ ResumeButton,
 RestartGame,
 StartGameButton,
 BirdAnimation,
+MoonAnimation,
 
 }
