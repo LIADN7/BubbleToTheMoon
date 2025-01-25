@@ -108,7 +108,6 @@ public class SoundManager : MonoBehaviour
     Debug.Log("All sounds stopped.");
 }
 
-
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {

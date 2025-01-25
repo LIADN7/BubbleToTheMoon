@@ -210,3 +210,22 @@ MonoBehaviour:
     pitch: 1
     loop: 1
     source: {fileID: 0}
+  - name: BirdIdle
+    clips:
+    - {fileID: 8300000, guid: e4b00980c839d4df8835a0190f8c685c, type: 3}
+    Output: {fileID: -5869262110335406333, guid: fab2831f9eb0a46bea31fa432af14303, type: 2}
+    volumes:
+    - 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: BirdAnimation
+    clips:
+    - {fileID: 8300000, guid: 7315ebd83867a4360a1cef0ecb9fc97f, type: 3}
+    - {fileID: 8300000, guid: 5188632ffda6d430eb6b54535e8ccbe8, type: 3}
+    Output: {fileID: -5869262110335406333, guid: fab2831f9eb0a46bea31fa432af14303, type: 2}
+    volumes:
+    - 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}

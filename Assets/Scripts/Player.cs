@@ -41,8 +41,8 @@ public class Player : MonoBehaviour
         }
         if (IsOutOfScreen())
         {
-            //manager.ChangeState(GameState.Endgame);
-            //manager.RestartGame();
+            manager.ChangeState(GameState.Endgame);
+            manager.RestartGame();
         }
     }
     private bool IsOutOfScreen()
