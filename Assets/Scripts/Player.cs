@@ -71,7 +71,7 @@ public class Player : MonoBehaviour
     /// </summary>
     protected virtual void ApplyHitForce()
     {
-        StartCoroutine(HitForceCountDown(1F));
+        StartCoroutine(HitForceCountDown(0.3f));
     }
     // Set power up on the player
     IEnumerator HitForceCountDown(float timerPowerUp)
