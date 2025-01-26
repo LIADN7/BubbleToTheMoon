@@ -18,7 +18,7 @@ Stay in the Frame: Drift too far, and the race is over!
 
 ## 🎵 What Makes It Special:
 
-This exciting game design is brought to life by the creative minds of Yarden, Maor, and Polina, the smooth sounds from our talented sound designer, and the development magic of Liad and Idan. Together, we’ve created a colorful, playful, and competitive journey that’s sure to make you smile.
+This exciting game design is brought to life by the creative minds of Yarden, Maor, and Polina, the smooth sounds from our talented sound designer Omry​, and the development magic of Liad and Idan. Together, we’ve created a colorful, playful, and competitive journey that’s sure to make you smile.
 
 Will your bubble be the one to reach the moon? Join the race and find out! 🚀🎈
  
