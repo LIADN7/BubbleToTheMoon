@@ -15,5 +15,14 @@ Be the first to reach the moon to win, inflate and diflate your bubble to avoid 
 **[LINK](https://liadn7.itch.io/bubbletothemoon)**
  
 ## Credits
- ....
- 
+
+### Devlop:
+**[@Liad Nagi](https://github.com/liadn7)**    **[@Idan Barzillai](https://github.com/idanBarzellai)**
+
+### Sound:
+
+**[@Omry Abramson](https://github.com/omryabramson)**
+
+### Design:
+
+**[@Yarden Walter]()**    **[@Polina Fihman]()**    **[@Maor Astritzki]()**
