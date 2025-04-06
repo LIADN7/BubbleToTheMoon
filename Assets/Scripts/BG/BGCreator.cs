@@ -16,21 +16,7 @@ public class BGCreator : MonoBehaviour
 
     private void Awake()
     {
-        if (inst == null)
-        {
-            inst = this;
-
-            DontDestroyOnLoad(gameObject);
-
-            // Subscribe to the sceneLoaded event
-            SceneManager.sceneLoaded += OnSceneLoaded;
-        }
-        else
-        {
-            Destroy(gameObject);
-            return;
-        }
-
+        inst = this;
         ResetParams();
     }
 

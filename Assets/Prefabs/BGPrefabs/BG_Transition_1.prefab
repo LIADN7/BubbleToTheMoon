@@ -18,14 +18,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4044397454452434541, guid: 8a7eff7b1b55a7449addef4e2052d2cb, type: 3}
       propertyPath: elements.Array.size
-      value: 0
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 4044397454452434541, guid: 8a7eff7b1b55a7449addef4e2052d2cb, type: 3}
       propertyPath: 'elements.Array.data[0]'
       value: 
-      objectReference: {fileID: 4757688438646286543, guid: 1fac28840bd0b6d41a51b3e08e012a9b, type: 3}
+      objectReference: {fileID: 3941379879473541932, guid: 1e8e22ee09423a44189ee42156422be4, type: 3}
     - target: {fileID: 4044397454452434541, guid: 8a7eff7b1b55a7449addef4e2052d2cb, type: 3}
       propertyPath: 'elements.Array.data[1]'
+      value: 
+      objectReference: {fileID: 488141137369366967, guid: a68fc788838eb9d4fbe3b634028baf21, type: 3}
+    - target: {fileID: 4044397454452434541, guid: 8a7eff7b1b55a7449addef4e2052d2cb, type: 3}
+      propertyPath: 'elements.Array.data[2]'
       value: 
       objectReference: {fileID: 4757688438646286543, guid: 1fac28840bd0b6d41a51b3e08e012a9b, type: 3}
     - target: {fileID: 7015093521771555973, guid: 8a7eff7b1b55a7449addef4e2052d2cb, type: 3}
@@ -74,16 +78,20 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7956969115365326412, guid: 8a7eff7b1b55a7449addef4e2052d2cb, type: 3}
       propertyPath: enemies.Array.size
-      value: 1
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 7956969115365326412, guid: 8a7eff7b1b55a7449addef4e2052d2cb, type: 3}
       propertyPath: 'enemies.Array.data[0]'
       value: 
-      objectReference: {fileID: 6569268340490211693, guid: 533b98753774bba4199db1f3b1813a5b, type: 3}
+      objectReference: {fileID: 3342085703196341602, guid: 1f6c2fdaaff13564fa169a5ce5def9e8, type: 3}
     - target: {fileID: 7956969115365326412, guid: 8a7eff7b1b55a7449addef4e2052d2cb, type: 3}
       propertyPath: 'enemies.Array.data[1]'
       value: 
-      objectReference: {fileID: 7870337815562714733, guid: 3ffb21d4f2dcff841ae9c0b1b7f0fc84, type: 3}
+      objectReference: {fileID: -3179778382068823269, guid: 533b98753774bba4199db1f3b1813a5b, type: 3}
+    - target: {fileID: 7956969115365326412, guid: 8a7eff7b1b55a7449addef4e2052d2cb, type: 3}
+      propertyPath: 'enemies.Array.data[2]'
+      value: 
+      objectReference: {fileID: -3179778382068823269, guid: 30710b13ea216b74e8b881ae9132106b, type: 3}
     - target: {fileID: 8877849567595084143, guid: 8a7eff7b1b55a7449addef4e2052d2cb, type: 3}
       propertyPath: m_Name
       value: BG_Transition_1

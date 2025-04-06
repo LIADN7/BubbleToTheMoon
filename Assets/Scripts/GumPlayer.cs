@@ -28,7 +28,7 @@ public class GumPlayer : Player
     protected override void HandleUpAndDownChange(int direction)
     {
         base.HandleUpAndDownChange(direction);
-        Debug.LogWarning($"yyyy: {currentLevelY - 1}");
+        // Debug.LogWarning($"yyyy: {currentLevelY - 1}");
         if (direction == 1)
         {
             
