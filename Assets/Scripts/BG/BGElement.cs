@@ -6,8 +6,7 @@ public class BGElement : MonoBehaviour
     protected GameManager manager;
     protected UICanvasController canvasController;
 
-
-    private void Start()
+    protected virtual void Awake()
     {
         manager = GameManager.inst;
         canvasController = FindFirstObjectByType<UICanvasController>();
