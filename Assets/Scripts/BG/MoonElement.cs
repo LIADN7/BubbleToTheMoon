@@ -6,7 +6,7 @@ public class MoonElement : BGElement
     {
         if (other.gameObject.CompareTag("Player"))
         {
-            canvasController.ShowWinner(other.gameObject.GetComponent<Player>().PlayerName); ///
+            canvasController.ShowWinner(other.transform.parent.GetComponent<Player>().PlayerName); ///
             manager.ChangeState(GameManager.GameState.Endgame);
         }
         if (other.gameObject.CompareTag("CameraTop"))

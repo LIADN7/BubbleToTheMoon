@@ -651,6 +651,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2908191316993137805, guid: 22e37420f0d89cd4594a3440a0381f5b, type: 3}
+      propertyPath: level
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2908191316993137805, guid: 22e37420f0d89cd4594a3440a0381f5b, type: 3}
       propertyPath: 'backgrounds.Array.data[2]'
       value: 
       objectReference: {fileID: 7869181172766483935, guid: c68677332f3fec742b16a36967fd767a, type: 3}
